@@ -1,0 +1,143 @@
+@import "./base/mixins";
+
+.about-section {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 130px;
+}
+
+.about-section__head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 117px;
+  margin-bottom: 90px;
+}
+
+.about-section__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 50pt;
+  word-spacing: 0.6em;
+  margin-left: 55px;
+  color: #037693;
+}
+
+.about-section__body {
+  margin: 0 auto;
+  width: 81%;
+  display: flex;
+}
+
+.about-section__column {
+  flex-basis: 55%;
+  padding-left: 150px;
+  margin-right: 25px;
+  &:nth-child(2) {
+    flex-basis: 45%;
+    display: flex;
+    padding-left: 0;
+    margin-right: 0;
+  }
+}
+
+.about-section__subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 49pt;
+  color: #037693;
+}
+
+.about-section__slogan {
+  margin: 12px 0 38px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 24pt;
+  word-spacing: 0.15em;
+  color: #037693;
+}
+
+.about-section__p {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16pt;
+  line-height: 1.46em;
+  color: #2d2d2d;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.stat-point {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px 0;
+  align-items: center;
+  padding-top: 47px;
+}
+
+.circle-icon {
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+}
+
+.circle-icon_theme_green {
+  background-color: #4ca59a;
+  @include box-shadow(0px 0px 0px 12px rgba($color: #4ca59a, $alpha: 0.6));
+}
+.circle-icon_theme_red {
+  background-color: #f26250;
+  @include box-shadow(0px 0px 0px 12px rgba($color: #f26250, $alpha: 0.6));
+}
+
+.circle-icon_theme_yellow {
+  background-color: #f0a765;
+  @include box-shadow(0px 0px 0px 12px rgba($color: #f0a765, $alpha: 0.6));
+}
+
+.stat-point__value {
+  margin-top: 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 40pt;
+}
+
+.stat-point__value_color_green {
+  color: #4ca59a;
+}
+.stat-point__value_color_red {
+  color: #f26250;
+}
+
+.stat-point__value_color_yellow {
+  color: #f0a765;
+}
+
+.stat-point__label {
+  margin: 24px 0 38px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18pt;
+  color: #2d2d2d;
+}
+
+.stat-point__line {
+  height: 4px;
+  border: 0;
+  margin: 3px 0;
+  width: 85%;
+}
+
+.stat-point__line_color_green {
+  background-color: #4ca59a;
+}
+.stat-point__line_color_red {
+  background-color: #f26250;
+}
+
+.stat-point__line_color_yellow {
+  background-color: #f0a765;
+}

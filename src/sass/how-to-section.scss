@@ -1,0 +1,52 @@
+.how-to-section {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.how-to-section__head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 110px 0 115px 0;
+}
+
+.how-to-section__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 50pt;
+  word-spacing: 0.6em;
+  margin-left: 38px;
+  color: #037693;
+}
+
+.how-to-section__body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.box-list-line {
+  display: flex;
+  margin: 0 -4% 155px 0;
+}
+
+.box-list-line__box {
+  margin: 0 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.square-icon {
+  height: 129px;
+  width: 129px;
+  background-color: #037693;
+}
+
+.box-list-line__label {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 22pt;
+  color: #037693;
+}

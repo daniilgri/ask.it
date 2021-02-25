@@ -1,0 +1,138 @@
+.footer {
+  background-color: #0d0d0d;
+  padding-top: 105px;
+}
+
+.footer__inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__column {
+  flex-basis: 25%;
+}
+
+.footer__column_low {
+  margin-top: 95px;
+}
+
+.footer__column_side_right {
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+
+.footer__about {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 55px;
+}
+
+.footer__p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 16pt;
+  color: #fff;
+  line-height: 1.3em;
+}
+
+.footer__subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 16pt;
+  margin-bottom: 30px;
+}
+
+.footer__lowtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14pt;
+  margin-bottom: 30px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer__link {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 14pt;
+  color: #fff;
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__privacy {
+  margin: 133px 0 37px;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 16pt;
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-list__icon {
+  height: 30px;
+  width: 30px;
+  background-color: springgreen;
+  margin-right: 43px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__socials-list {
+  margin-bottom: 40px;
+}
+
+.footer__input {
+  border-bottom: 1px solid white;
+  width: 77%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 12pt;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  &::placeholder {
+    text-align: center;
+  }
+}
+
+.letter-icon {
+  height: 30px;
+  width: 30px;
+  background-color: springgreen;
+  margin-left: auto;
+}

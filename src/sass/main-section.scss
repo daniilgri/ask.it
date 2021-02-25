@@ -1,0 +1,100 @@
+.main-section {
+  background-image: url("../images/main/bg-img-1.jpg");
+  height: 106%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone {
+  position: absolute;
+  bottom: -20%;
+  right: 12%;
+  height: 91%;
+}
+
+.main-section__inner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+
+.main-section__title {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 50pt;
+  color: white;
+  text-shadow: 0px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+}
+
+.main-section__slogan {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 28pt;
+  color: white;
+}
+
+.main-section__controllers {
+  margin-top: 200px;
+  display: flex;
+}
+
+.main-section__button {
+  margin-right: 55px;
+}
+
+.main-section__button {
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 22pt;
+}
+
+.input-button {
+  display: flex;
+  border: 1px solid white;
+}
+
+.input-button__button {
+  padding: 13px 20px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 22pt;
+  height: 100%;
+}
+
+.input-button__input {
+  outline: none;
+  border: 0;
+  width: 150px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18pt;
+  color: #037693;
+  padding: 0 10px;
+  height: auto;
+  &::placeholder {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+    color: #037693;
+    text-align: center;
+  }
+}
