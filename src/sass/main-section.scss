@@ -1,6 +1,6 @@
 .main-section {
   background-image: url("../images/main/bg-img-1.jpg");
-  height: 106%;
+  height: 106.1%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,17 +11,18 @@
 .phone {
   position: absolute;
   bottom: -20%;
-  right: 12%;
-  height: 91%;
+  right: 11.5%;
+  height: 91.2%;
 }
 
 .main-section__inner {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 70%;
-  height: 100%;
+  height: 42.5%;
+  margin-top: 292px;
 }
 
 .main-section__title {
@@ -30,36 +31,55 @@
   font-weight: 800;
   font-size: 50pt;
   color: white;
-  text-shadow: 0px 5px rgba(0, 0, 0, 0.7);
-  margin-bottom: 50px;
+  text-shadow: 0px 7px rgba(0, 0, 0, 0.7);
+  margin-left: 44px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+}
+
+.main-section__title::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background-color: white;
+  border-radius: 20px;
+  width: 36%;
+  margin-top: 16px;
+  margin-left: auto;
 }
 
 .main-section__slogan {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 28pt;
+  font-size: 29pt;
   color: white;
+  word-spacing: 4px;
+  margin-right: 34px;
+  letter-spacing: 0px;
 }
 
 .main-section__controllers {
-  margin-top: 200px;
+  margin-top: 168px;
+  margin-left: 47px;
   display: flex;
+  height: 61px;
 }
 
 .main-section__button {
   margin-right: 55px;
-}
-
-.main-section__button {
-  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
   cursor: pointer;
   border: 1px solid white;
   outline: 0;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 22pt;
+  font-weight: 400;
+  font-size: 19pt;
+  letter-spacing: -0.5px;
 }
 
 .input-button {
@@ -68,28 +88,32 @@
 }
 
 .input-button__button {
-  padding: 13px 20px;
   cursor: pointer;
   border: 0;
   outline: 0;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 22pt;
+  font-weight: 400;
+  font-size: 19pt;
+  letter-spacing: 0px;
+  word-spacing: 4px;
+  padding-right: 14px;
   height: 100%;
+  width: 144px;
 }
 
 .input-button__input {
   outline: none;
   border: 0;
-  width: 150px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18pt;
   color: #037693;
-  padding: 0 10px;
+  width: 139px;
   height: auto;
+  letter-spacing: -1px;
+
   &::placeholder {
     font-family: "Lato", sans-serif;
     font-weight: 400;

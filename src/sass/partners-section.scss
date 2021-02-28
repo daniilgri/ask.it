@@ -1,6 +1,7 @@
 .partners-section {
-  padding-bottom: 75px;
-  background-image: url("../images/main/bg-img-1.jpg");
+  padding-bottom: 76px;
+  background-image: linear-gradient(rgba(#323131, 0.8), rgba(#323131, 0.8)),
+    url("../images/partners/bg.jpg");
   height: 30%;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,15 +14,28 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 19px 0;
+  margin-top: 15px;
 }
 
 .partners-section__title {
+  color: white;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 49pt;
-  margin-left: 38px;
-  color: white;
+  font-size: 50pt;
+  margin-left: 47px;
+  letter-spacing: 6px;
+}
+
+.partners-section__title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: white;
+  border-radius: 20px;
+  width: 37%;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .partners-section__body {
@@ -30,19 +44,19 @@
 }
 
 .partners-section__scroll {
-  margin-top: 110px;
+  margin-top: 109px;
 }
 
 .horizontal-scoll {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.control-icon {
-  height: 70px;
-  width: 35px;
-  background-color: springgreen;
+.horizontal-scoll__controller {
+  height: 45px;
+  width: 45px;
 }
 
 .horizontal-scroll__list {
@@ -53,7 +67,16 @@
 }
 
 .horizontal-scroll__icon {
-  height: 70px;
-  width: 180px;
-  background-color: springgreen;
+  display: flex;
+  height: 36px;
+  width: calc(100% / 7);
+  justify-content: center;
+}
+
+.horizontal-scroll__svg {
+  height: 100%;
+  width: auto;
+  &:hover {
+    fill: white;
+  }
 }

@@ -12,23 +12,32 @@
     <header class="header">
       <div class="header__inner">
         <a href="#" class="logo header__logo"
-          ><img class="logo__img" src="./src/images/header/logo/logo.png"
-        /></a>
+          ><object
+            class="logo__img"
+            data="./src/images/header/logo.svg"
+          ></object
+        ></a>
         <nav class="header__menu">
           <a class="header__link" href="#">Home</a>
+          <a class="header__link" href="#">How it works</a>
           <a class="header__link" href="#">Features</a>
           <a class="header__link" href="#">Partners</a>
           <a class="header__link" href="#">Events</a>
           <a class="header__link" href="#">About us</a>
-          <a class="header__link" href="#">How it works</a>
         </nav>
         <div class="auth-controllers">
-          <a class="auth-button" href="#">
-            +
-            <span class="auth-button__label">Login</span>
+          <a class="auth-controllers__button" href="#">
+            <object
+              data="./src/images/header/sign-in-icon.svg"
+              class="auth-controllers__icon"
+            ></object>
+            <span class="auth-button__label">Log in</span>
           </a>
-          <a class="auth-button" href="#">
-            -
+          <a class="auth-controllers__button" href="#">
+            <object
+              data="./src/images/header/avatar-icon.svg"
+              class="auth-controllers__icon"
+            ></object>
             <span class="auth-button__label">Register</span>
           </a>
         </div>
@@ -63,23 +72,43 @@
       <div class="how-to-section__body how-to-section-body">
         <ul class="box-list-line">
           <li class="box-list-line__box">
-            <div class="square-icon"></div>
+            <div class="box-list-line__icon box-list-line__icon_status_active">
+              <object
+                data="./src/images/how-it-works/phone-icon.svg"
+                class="box-list-line__svg"
+              ></object>
+            </div>
             <p class="box-list-line__label">Create a FREE account with us</p>
           </li>
           <li class="box-list-line__box">
-            <div class="square-icon"></div>
+            <div class="box-list-line__icon">
+              <object
+                data="./src/images/how-it-works/discuss-icon.svg"
+                class="box-list-line__svg"
+              ></object>
+            </div>
             <p class="box-list-line__label">
               Create your own event or Q&A session
             </p>
           </li>
           <li class="box-list-line__box">
-            <div class="square-icon"></div>
+            <div class="box-list-line__icon">
+              <object
+                data="./src/images/how-it-works/qr-code-icon.svg"
+                class="box-list-line__svg"
+              ></object>
+            </div>
             <p class="box-list-line__label">
               Share your meeting code with the participants
             </p>
           </li>
           <li class="box-list-line__box">
-            <div class="square-icon"></div>
+            <div class="box-list-line__icon">
+              <object
+                data="./src/images/how-it-works/favorites-icon.svg"
+                class="box-list-line__svg"
+              ></object>
+            </div>
             <p class="box-list-line__label">Run your meeting successfully</p>
           </li>
         </ul>
@@ -87,6 +116,13 @@
     </section>
 
     <section class="interact-section">
+      <div class="mark mark_theme_white">
+        <h3 class="mark__text mark__text_theme_white">Interaction</h3>
+        <div class="mark__shape">
+          <div class="mark__line mark__line_theme_white"></div>
+          <div class="mark__circle mark__circle_theme_white"></div>
+        </div>
+      </div>
       <div class="interact-section__inner">
         <div class="interact-section__column interact-section__column_size_md">
           <h2 class="interact-section__title">
@@ -111,9 +147,37 @@
             </p>
           </div>
         </div>
-        <div
-          class="interact-section__column interact-section__column_size_sm"
-        ></div>
+        <div class="interact-section__column interact-section__column_size_sm">
+          <div class="three-diamond-square">
+            <div class="three-diamond-square__square">
+              <object
+                data="./src/images/interaction/light-bulb-icon.svg"
+                class="three-diamond-square__icon"
+              ></object>
+              <p class="three-diamond-square__text">Ask Question Right Now</p>
+            </div>
+          </div>
+          <div class="three-diamond-square">
+            <div class="three-diamond-square__square">
+              <object
+                data="./src/images/interaction/magnifying-glass-icon.svg"
+                class="three-diamond-square__icon"
+              ></object>
+              <p class="three-diamond-square__text">Choose From Questions</p>
+            </div>
+          </div>
+          <div class="three-diamond-square">
+            <div class="three-diamond-square__square">
+              <object
+                data="./src/images/interaction/contract-icon.svg"
+                class="three-diamond-square__icon"
+              ></object>
+              <p class="three-diamond-square__text">
+                Select From Top Questions
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -123,29 +187,51 @@
       </div>
       <div class="features-section__body">
         <div class="show-grid">
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">Ask a question</h5>
+          <div class="show-grid__row">
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/microphone-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">Ask a question</h5>
+            </div>
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/bar-chart-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">Raise a poll</h5>
+            </div>
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/insight-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">View statistic</h5>
+            </div>
           </div>
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">Raise a poll</h5>
-          </div>
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">View stat</h5>
-          </div>
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">Vote a question</h5>
-          </div>
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">Create a survey</h5>
-          </div>
-          <div class="show-grid__cell">
-            <div class="show-grid__icon"></div>
-            <h5 class="show-grid__text">Privacy ensured</h5>
+          <div class="show-grid__row">
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/medal-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">Vote a question</h5>
+            </div>
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/flag-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">Create a survey</h5>
+            </div>
+            <div class="show-grid__cell">
+              <object
+                data="./src/images/features/padlock-icon.svg"
+                class="show-grid__svg"
+              ></object>
+              <h5 class="show-grid__text">Privacy ensured</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -157,17 +243,58 @@
       </div>
       <div class="partners-section__body">
         <div class="horizontal-scoll partners-section__scroll">
-          <div class="control-icon"></div>
+          <object
+            data="./src/images/partners/back-arrow-icon.svg"
+            class="horizontal-scoll__controller"
+          ></object>
           <ul class="horizontal-scroll__list">
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
-            <li class="horizontal-scroll__icon"></li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/clients-logos-mccann-black-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/clients-logos-un-women-black-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/customer-accenture-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/customer-cisco-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/customer-eventbrite-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/customer-zappos-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
+            <li class="horizontal-scroll__icon">
+              <object
+                data="./src/images/partners/customer-siemens-icon.svg"
+                class="horizontal-scroll__svg"
+              ></object>
+            </li>
           </ul>
-          <div class="control-icon"></div>
+          <object
+            data="./src/images/partners/forward-arrow-icon.svg"
+            class="horizontal-scoll__controller"
+          ></object>
         </div>
       </div>
     </section>
@@ -185,7 +312,10 @@
           </div>
           <hr class="card__line card__line_color_green" />
           <div class="card__body">
-            <div class="card__icon"></div>
+            <object
+              data="./src/images/events/usb-connection-icon.svg"
+              class="card__svg"
+            ></object>
             <div class="card__p">
               Offers customizable on-line registration service for event
               organizers. Includes pricing, features, and types of accounts.
@@ -195,7 +325,7 @@
             </button>
           </div>
         </div>
-        <div class="card card_center">
+        <div class="card">
           <div class="card__head">
             <h4 class="card__title">
               Interactive <span class="card__title_bold">event</span>
@@ -203,7 +333,10 @@
           </div>
           <hr class="card__line card__line_color_red" />
           <div class="card__body">
-            <div class="card__icon"></div>
+            <object
+              data="./src/images/events/interactivity-icon.svg"
+              class="card__svg"
+            ></object>
             <div class="card__p">
               Offers customizable on-line registration service for event
               organizers. Includes pricing, features, and types of accounts.
@@ -221,7 +354,10 @@
           </div>
           <hr class="card__line card__line_color_yellow" />
           <div class="card__body">
-            <div class="card__icon"></div>
+            <object
+              data="./src/images/events/hard-disk-icon.svg"
+              class="card__svg"
+            ></object>
             <div class="card__p">
               Offers customizable on-line registration service for event
               organizers. Includes pricing, features, and types of accounts.
@@ -235,6 +371,13 @@
     </section>
 
     <section class="about-section">
+      <div class="mark mark_theme_cyan">
+        <h3 class="mark__text mark__text_theme_cyan">Know us</h3>
+        <div class="mark__shape">
+          <div class="mark__line mark__line_theme_cyan"></div>
+          <div class="mark__circle mark__circle_theme_cyan"></div>
+        </div>
+      </div>
       <div class="about-section__head">
         <h2 class="about-section__title">About us</h2>
       </div>
@@ -242,14 +385,19 @@
         <div class="about-section__column">
           <h2 class="about-section__subtitle">Who we are?</h2>
           <h4 class="about-section__slogan">What we can do for you</h4>
-          <p class="about-section__p">
-            it’s never been easier to connect with people who speak this
-            language. They want others to build up their self-image and
-            confidence, and digital connectivity creates ample opportunity to
-            tell your One option might be developing a blog series that focuses
-            on industry wins, or spotlights companies that are doing something
-            right. Or if you share an article with your network,
-          </p>
+          <div class="about-section__text">
+            <p class="about-section__p">
+              it’s never been easier to connect with people who speak this
+              language. They want others to build up their self-image and
+              confidence, and digital connectivity creates ample opportunity to
+              tell your
+            </p>
+            <p class="about-section__p">
+              One option might be developing a blog series that focuses on
+              industry wins, or spotlights companies that are doing something
+              right. Or if you share an article with your network,
+            </p>
+          </div>
         </div>
         <div class="about-section__column">
           <div class="stat-point">
@@ -263,17 +411,17 @@
           <div class="stat-point">
             <div class="circle-icon circle-icon_theme_red"></div>
             <div class="stat-point__value stat-point__value_color_red">
-              20,145
+              5480
             </div>
-            <div class="stat-point__label">audience served</div>
+            <div class="stat-point__label">hours of service</div>
             <hr class="stat-point__line stat-point__line_color_red" />
           </div>
           <div class="stat-point">
             <div class="circle-icon circle-icon_theme_yellow"></div>
             <div class="stat-point__value stat-point__value_color_yellow">
-              20,145
+              715
             </div>
-            <div class="stat-point__label">audience served</div>
+            <div class="stat-point__label">event covered</div>
             <hr class="stat-point__line stat-point__line_color_yellow" />
           </div>
         </div>
@@ -284,8 +432,11 @@
       <div class="footer__inner">
         <div class="footer__about footer__column">
           <a href="#" class="logo footer__logo"
-            ><img class="logo__img" src="./src/images/header/logo/logo.png"
-          /></a>
+            ><object
+              class="logo__img"
+              data="./src/images/footer/logo.svg"
+            ></object
+          ></a>
           <p class="footer__p">
             We are AskVote.io. We are a online platform for operating events
             effectively. We're working on a web application for facilitating
@@ -293,46 +444,67 @@
             used mainly by corporate and government customers.
           </p>
         </div>
-        <div
-          class="footer__column footer__column_low footer__column_side_right"
-        >
-          <h4 class="footer__subtitle">Useful links</h4>
-          <ul class="footer__menu">
-            <li class="footer__link">Home</li>
-            <li class="footer__link">How it works?</li>
-            <li class="footer__link">Terms and conditions</li>
-            <li class="footer__link">Cookies policy</li>
-            <li class="footer__link">Contact us</li>
-            <li class="footer__link">About us</li>
-            <li class="footer__link">Features</li>
-            <li class="footer__link">Event list</li>
-          </ul>
-        </div>
-        <div
-          class="footer__column footer__column_low footer__column_side_right"
-        >
-          <h4 class="footer__subtitle">My account</h4>
-          <ul class="footer__menu">
-            <li class="footer__link">New account</li>
-            <li class="footer__link">Open an account</li>
-            <li class="footer__link">Manage</li>
-            <li class="footer__link">Change password</li>
-            <li class="footer__link">Delete account</li>
-            <li class="footer__link">Dashboard</li>
-          </ul>
+        <div class="footer__navigation">
+          <div class="footer__column_low">
+            <h4 class="footer__subtitle">Useful links</h4>
+            <ul class="footer__menu">
+              <li class="footer__link">Home</li>
+              <li class="footer__link">How it works?</li>
+              <li class="footer__link">Terms and conditions</li>
+              <li class="footer__link">Cookies policy</li>
+              <li class="footer__link">Contact us</li>
+              <li class="footer__link">About us</li>
+              <li class="footer__link">Features</li>
+              <li class="footer__link">Event list</li>
+            </ul>
+          </div>
+          <div class="footer__column_low">
+            <h4 class="footer__subtitle">My account</h4>
+            <ul class="footer__menu">
+              <li class="footer__link">New account</li>
+              <li class="footer__link">Open an account</li>
+              <li class="footer__link">Manage</li>
+              <li class="footer__link">Change password</li>
+              <li class="footer__link">Delete account</li>
+              <li class="footer__link">Dashboard</li>
+            </ul>
+          </div>
         </div>
         <div class="footer__socials footer__column footer__column_low">
           <h4 class="footer__subtitle">We are social</h4>
           <ul class="socials-list footer__socials-list">
-            <li class="socials-list__icon"></li>
-            <li class="socials-list__icon"></li>
-            <li class="socials-list__icon"></li>
-            <li class="socials-list__icon"></li>
+            <li class="socials-list__icon">
+              <object
+                data="./src/images/footer/twitter-icon.svg"
+                class="socials-list__svg"
+              ></object>
+            </li>
+            <li class="socials-list__icon">
+              <object
+                data="./src/images/footer/pinterest-icon.svg"
+                class="socials-list__svg"
+              ></object>
+            </li>
+            <li class="socials-list__icon">
+              <object
+                data="./src/images/footer/linkedin-icon.svg"
+                class="socials-list__svg"
+              ></object>
+            </li>
+            <li class="socials-list__icon">
+              <object
+                data="./src/images/footer/facebook-icon.svg"
+                class="socials-list__svg"
+              ></object>
+            </li>
           </ul>
           <h5 class="footer__lowtitle">Subscribe to our newsletter</h5>
           <div class="footer__input">
             <input type="text" class="input" placeholder="Email address" />
-            <div class="letter-icon"></div>
+            <object
+              data="./src/images/footer/envelope-icon.svg"
+              class="envelop-icon"
+            ></object>
           </div>
         </div>
         <p class="footer__privacy">© 2016 AskVote.io, all rights received</p>

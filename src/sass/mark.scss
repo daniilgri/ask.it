@@ -1,0 +1,89 @@
+.mark {
+  position: absolute;
+  top: 0px;
+  left: 12.8%;
+  height: 70px;
+  width: 342px;
+  padding: 0 17px;
+  box-sizing: border-box;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: top left;
+  display: flex;
+  align-items: center;
+}
+
+.mark_theme_white {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.mark_theme_cyan {
+  border-right: 1px solid #037693;
+  border-top: 1px solid #037693;
+  border-bottom: 1px solid #037693;
+}
+
+.mark__text {
+  white-space: nowrap;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 24pt;
+  letter-spacing: 5px;
+  word-spacing: 6px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.mark__text_theme_white {
+  color: white;
+}
+
+.mark__text_theme_cyan {
+  color: #037693;
+}
+
+.mark__shape {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 6px;
+}
+
+.mark__circle {
+  border-radius: 50%;
+  height: 21px;
+  min-width: 21px;
+  background-color: white;
+}
+
+.mark__circle_theme_white {
+  background-color: white;
+}
+
+.mark__circle_theme_cyan {
+  background-color: #037693;
+}
+
+.mark__line {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.mark__line_theme_white {
+  background-color: white;
+}
+
+.mark__line_theme_cyan {
+  background-color: #037693;
+}

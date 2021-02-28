@@ -1,12 +1,13 @@
 .interact-section {
   background-color: #037693;
+  position: relative;
 }
 
 .interact-section__inner {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
-  padding: 50px 0;
+  padding: 45px 0 50px 0;
 }
 
 .interact-section__column {
@@ -18,17 +19,71 @@
   flex-basis: 42%;
 }
 
+.three-diamond-square {
+  position: relative;
+  height: 100%;
+  &:nth-child(2) {
+    .three-diamond-square__square {
+      top: -6.2%;
+      left: 43%;
+    }
+  }
+  &:nth-child(3) {
+    .three-diamond-square__square {
+      top: -44.2%;
+      left: 10%;
+    }
+  }
+}
+
+.three-diamond-square__square {
+  position: absolute;
+  top: 31.8%;
+  left: 10%;
+  width: 273px;
+  height: 273px;
+  background-image: url("../images/interaction/rounded-diamond-square.svg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.three-diamond-square__icon {
+  position: absolute;
+  top: 16%;
+  left: 35%;
+  width: 84px;
+  height: auto;
+}
+
+.three-diamond-square__text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20pt;
+  margin-top: 61px;
+  line-height: 30px;
+}
+
 .interact-section__column_size_md {
   flex-basis: 58%;
+  padding-left: 53px;
 }
 
 .interact-section__title {
   width: 55%;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 50pt;
+  font-size: 49pt;
   color: white;
-  line-height: 1.17em;
+  line-height: 1.22em;
+  letter-spacing: -0.5px;
+  word-spacing: 5px;
 }
 
 .interact-section__slogan {
@@ -36,12 +91,20 @@
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 24pt;
-  word-spacing: 0.15em;
+  word-spacing: 0.13em;
   color: white;
 }
 
+.interact-section__slogan::after {
+  content: "";
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: white;
+}
+
 .interact-section__text {
-  margin-top: 35px;
+  margin-top: 32px;
 }
 
 .interact-section__p {
@@ -49,9 +112,29 @@
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 16pt;
-  line-height: 1.2em;
+  line-height: 1.25em;
   color: white;
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.three-diamond-square__elem {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #f1b451;
+  position: relative;
+  top: -50px;
+}
+
+.three-diamond-square__elem::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #f1b451;
 }

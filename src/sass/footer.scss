@@ -1,13 +1,14 @@
 .footer {
   background-color: #0d0d0d;
-  padding-top: 105px;
+  padding-top: 101px;
 }
 
 .footer__inner {
-  width: 80%;
+  width: 80.8%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .footer__column {
@@ -18,19 +19,18 @@
   margin-top: 95px;
 }
 
-.footer__column_side_right {
-  padding-left: 150px;
-  box-sizing: border-box;
-}
-
 .footer__about {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
 .footer__logo {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
+  width: 110px;
+  height: auto;
 }
 
 .footer__p {
@@ -48,6 +48,7 @@
   color: #fff;
   font-size: 16pt;
   margin-bottom: 30px;
+  letter-spacing: 0.4px;
 }
 
 .footer__lowtitle {
@@ -55,7 +56,23 @@
   font-weight: 300;
   color: #fff;
   font-size: 14pt;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  letter-spacing: -0.3px;
+}
+
+.footer__navigation {
+  padding-left: 206px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  display: flex;
+  .footer__column_low {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding-left: 49px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }
 
 .footer__menu {
@@ -68,20 +85,10 @@
   font-weight: 200;
   font-size: 14pt;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 3.5px;
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.footer__privacy {
-  margin: 133px 0 37px;
-  flex-basis: 100%;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 200;
-  font-size: 16pt;
-  color: #fff;
 }
 
 .footer__socials {
@@ -95,17 +102,23 @@
 }
 
 .socials-list__icon {
-  height: 30px;
-  width: 30px;
-  background-color: springgreen;
-  margin-right: 43px;
+  height: 25px;
+  width: 25px;
+  margin-right: 46px;
   &:last-child {
     margin-right: 0;
   }
 }
 
+.socials-list__svg {
+  width: 100%;
+  height: auto;
+}
+
 .footer__socials-list {
+  margin-top: 5px;
   margin-bottom: 40px;
+  margin-right: 11px;
 }
 
 .footer__input {
@@ -126,6 +139,18 @@
   font-family: "Lato", sans-serif;
   font-weight: 300;
   &::placeholder {
+    padding-left: 46px;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+  &::-webkit-input-placeholder {
+    padding-left: 46px;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+  &::-moz-placeholder {
+    padding-left: 46px;
+    letter-spacing: 0.8px;
     text-align: center;
   }
 }
@@ -135,4 +160,16 @@
   width: 30px;
   background-color: springgreen;
   margin-left: auto;
+}
+
+.footer__privacy {
+  margin: 134px 0 36px;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 17pt;
+  color: #fff;
+  word-spacing: -1px;
+  letter-spacing: 0.2px;
 }
