@@ -75,6 +75,18 @@
   word-spacing: 1.5px;
   letter-spacing: 2.5px;
   color: #037693;
+  display: flex;
+
+  &::after {
+    content: " ";
+    flex: 1;
+    height: 2px;
+    background-color: #037693;
+    margin-top: 27px;
+    margin-right: 12.5%;
+    margin-left: 1.7%;
+    display: block;
+  }
 }
 
 .about-section__text {

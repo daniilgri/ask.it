@@ -33,13 +33,14 @@
 
 .how-to-section__body {
   margin: 0 auto;
-  width: 82.5%;
+  width: 86.3%;
 }
 
 .box-list-line {
   margin: 0 0 145px 0;
   display: flex;
   flex-wrap: nowrap;
+  flex: 0 1 auto;
 }
 
 .box-list-line__box {
@@ -47,6 +48,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  width: 25%;
 }
 
 .box-list-line__icon {
