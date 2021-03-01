@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .main-section {
   background-image: url("../images/main/bg-img-1.jpg");
   height: 106.1%;
@@ -79,7 +81,8 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 19pt;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.1px;
+  word-spacing: 4px;
 }
 
 .input-button {
@@ -120,5 +123,67 @@
     font-size: 18pt;
     color: #037693;
     text-align: center;
+  }
+}
+
+@include lg {
+  .main-section {
+    height: 86.1%;
+  }
+
+  .main-section__inner {
+    margin-top: 241px;
+    height: 42.1%;
+  }
+
+  .main-section__title {
+    font-size: 38pt;
+    word-spacing: -4px;
+    letter-spacing: 1.5px;
+    margin-left: 44px;
+  }
+
+  .main-section__title::after {
+    height: 7px;
+    margin-top: 12px;
+  }
+
+  .main-section__slogan {
+    font-size: 24pt;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    margin-right: 20px;
+  }
+
+  .main-section__controllers {
+    height: 48px;
+    margin-top: 137px;
+    margin-left: 45px;
+  }
+
+  .main-section__button {
+    font-size: 14pt;
+    letter-spacing: 1px;
+    word-spacing: 1.4px;
+    width: 177px;
+    margin-right: 43px;
+  }
+
+  .input-button__button {
+    font-size: 15pt;
+    letter-spacing: -0.2px;
+    word-spacing: 4.1px;
+    width: 117px;
+  }
+
+  .input-button__input {
+    width: 111px;
+    font-size: 15pt;
+  }
+
+  .phone {
+    bottom: -19.6%;
+    right: 11%;
+    height: 90.5%;
   }
 }

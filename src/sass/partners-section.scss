@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .partners-section {
   padding-bottom: 76px;
   background-image: linear-gradient(rgba(#323131, 0.8), rgba(#323131, 0.8)),
@@ -78,5 +80,54 @@
   width: auto;
   &:hover {
     fill: white;
+  }
+}
+
+@include lg {
+  .partners-section {
+    padding-bottom: 31px;
+    height: 100%;
+  }
+
+  .partners-section__head {
+    margin-top: 107px;
+  }
+
+  .partners-section__title {
+    letter-spacing: 8px;
+    margin-left: 12px;
+
+    &::after {
+      height: 5px;
+      width: 37.5%;
+      margin-top: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  .horizontal-scoll__controller {
+    display: none;
+  }
+
+  .horizontal-scroll__icon {
+    flex-basis: 30%;
+    padding: 0px 21px;
+    margin-bottom: 113px;
+    height: 71px;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+  }
+
+  .horizontal-scroll__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partners-section__body {
+    width: 93%;
+  }
+
+  .partners-section__scroll {
+    margin-top: 232px;
   }
 }

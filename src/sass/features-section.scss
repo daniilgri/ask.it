@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .features-section {
   padding-bottom: 116px;
 }
@@ -142,4 +144,30 @@
   font-weight: 700;
   font-size: 24pt;
   color: #037693;
+}
+
+@include lg {
+  .features-section {
+    padding-bottom: 855px;
+  }
+
+  .features-section__head {
+    margin-top: 138px;
+  }
+
+  .features-section__title {
+    margin-left: -8.7px;
+    letter-spacing: 4.8px;
+    font-size: 43pt;
+
+    &::after {
+      height: 3.2px;
+      margin-top: 11.1px;
+      margin-left: 2px;
+    }
+  }
+
+  .features-section__body {
+    margin-top: 80px;
+  }
 }

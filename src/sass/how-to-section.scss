@@ -1,13 +1,16 @@
+@import "./base/media_mixins";
+
 .how-to-section {
   display: flex;
   flex-flow: column nowrap;
+  padding: 112px 0 145px 0;
 }
 
 .how-to-section__head {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 112px 0 98px 0;
+  margin-bottom: 98px;
 }
 
 .how-to-section__title {
@@ -37,18 +40,21 @@
 }
 
 .box-list-line {
-  margin: 0 0 145px 0;
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex: 0 1 auto;
+  justify-content: center;
 }
 
 .box-list-line__box {
-  margin: 0 1.1%;
+  padding: 0 1.1%;
+  box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 25%;
+
+  flex-basis: 25%;
 }
 
 .box-list-line__icon {
@@ -82,4 +88,48 @@
   color: #037693;
   letter-spacing: 0px;
   word-spacing: 3px;
+}
+
+@include lg {
+  .how-to-section {
+    padding: 39px 0 30px 0;
+  }
+
+  .how-to-section__head {
+    margin-bottom: 50px;
+  }
+
+  .how-to-section__title {
+    font-size: 38pt;
+    margin-left: 60px;
+  }
+
+  .how-to-section__title::after {
+    height: 4px;
+    border-radius: 20px;
+    width: 22%;
+    margin-top: 11px;
+    margin-left: 4px;
+  }
+
+  .how-to-section__body {
+    width: 85.9%;
+  }
+
+  .box-list-line__icon {
+    width: 102px;
+    height: 102px;
+  }
+
+  .box-list-line__label {
+    font-size: 16pt;
+    margin-top: 45px;
+    line-height: 26px;
+  }
+}
+
+@include md {
+  .box-list-line__box {
+    flex-basis: 50%;
+  }
 }

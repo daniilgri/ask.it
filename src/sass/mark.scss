@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .mark {
   position: absolute;
   top: 0px;
@@ -86,4 +88,10 @@
 
 .mark__line_theme_cyan {
   background-color: #037693;
+}
+
+@include lg {
+  .mark {
+    display: none;
+  }
 }

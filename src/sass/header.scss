@@ -9,7 +9,7 @@
 
 .header__inner {
   height: 100%;
-  width: 78%;
+  max-width: 78%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,7 @@
   align-items: center;
   margin-bottom: 2px;
   margin-left: 62px;
+  min-width: 110px;
   width: 110px;
   height: auto;
 }
@@ -31,7 +32,8 @@
 
 .header__menu {
   display: flex;
-  margin-left: 93px;
+  margin-left: 8%;
+  min-width: 64.1%;
 }
 
 .header__link {
@@ -40,6 +42,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 23pt;
+  //font-size: 1.6vw;
   display: flex;
   align-items: center;
   padding: 0px 19px 8px 19px;
@@ -47,6 +50,7 @@
   letter-spacing: 0.0005em;
   transition: all 0.1s;
   word-spacing: 2px;
+  white-space: nowrap;
 
   &:hover {
     color: #ffffff;
@@ -83,6 +87,7 @@
 .auth-controllers__icon {
   height: 27px;
   width: auto;
+  margin-right: 3px;
 }
 
 .auth-button__label {
@@ -90,36 +95,32 @@
   font-weight: 400;
   font-size: 15px;
   margin-top: 6px;
+  white-space: nowrap;
 }
 
-@include xl {
+@include md {
+}
+
+@include lg {
   .header {
-    height: 133px;
+    height: 132px;
   }
 
   .header__inner {
-    height: 100%;
-    width: 81%;
+    width: 85%;
+    justify-content: flex-end;
   }
 
   .header__logo {
     display: none;
   }
 
-  .header__link {
-    font-size: 18pt;
+  .header__menu {
+    margin-right: 0;
+    margin-left: 0;
   }
-}
 
-@include lg {
   .header__link {
-    font-size: 16pt;
+    font-size: 20pt;
   }
-  .header__inner {
-    height: 100%;
-    width: 91%;
-  }
-}
-
-@include md {
 }

@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .footer {
   background-color: #0d0d0d;
   padding-top: 101px;
@@ -29,6 +31,11 @@
   align-items: center;
   padding-left: 40px;
   box-sizing: border-box;
+
+  flex-basis: 25%;
+  max-width: 25%;
+  width: 25%;
+  flex: 0 1 auto;
 }
 
 .footer__logo {
@@ -184,4 +191,99 @@
   color: #fff;
   word-spacing: -1px;
   letter-spacing: 0.2px;
+}
+
+@include lg {
+  .footer {
+    padding-top: 163px;
+  }
+
+  .footer__inner {
+    flex-flow: column wrap;
+  }
+
+  .footer__about {
+    padding-left: 0;
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    width: 91%;
+    max-width: initial;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    margin-bottom: 78px;
+    width: 220px;
+  }
+
+  .footer__column {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .footer__p {
+    font-weight: 300;
+    font-size: 46pt;
+    line-height: 85px;
+  }
+
+  .footer__navigation {
+    max-width: initial;
+    flex-basis: initial;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footer__column_low {
+    margin-top: 153px;
+  }
+
+  .footer__subtitle {
+    font-size: 43pt;
+    margin-bottom: 76px;
+    letter-spacing: 0.4px;
+  }
+
+  .footer__socials.footer__column_low {
+    margin-top: 78px;
+    margin-right: 77.5px;
+  }
+
+  .footer__socials {
+    .footer__subtitle {
+      font-size: 58pt;
+      margin-bottom: 115px;
+      letter-spacing: -1.1px;
+      word-spacing: 10.1px;
+    }
+  }
+
+  .footer__link {
+    margin-bottom: 4.8px;
+    font-size: 33pt;
+  }
+
+  .socials-list__icon {
+    height: auto;
+    width: 86px;
+    margin-right: 159px;
+  }
+
+  .footer__socials-list {
+    margin-bottom: 142px;
+  }
+
+  .footer__lowtitle {
+    font-size: 47pt;
+    margin-bottom: 181px;
+  }
+
+  .footer__privacy {
+    margin: 344px 0 64px;
+    font-size: 43pt;
+    letter-spacing: 1.4px;
+  }
 }

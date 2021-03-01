@@ -1,3 +1,5 @@
+@import "./base/media_mixins";
+
 .interact-section {
   background-color: #037693;
   position: relative;
@@ -142,4 +144,103 @@
   height: 0;
   border: 50px solid transparent;
   border-top-color: #f1b451;
+}
+
+@include lg {
+  .interact-section__inner {
+    width: 84%;
+    padding: 45px 0 41px 0;
+  }
+
+  .interact-section__column_size_md {
+    padding-top: 115px;
+    padding-left: 88px;
+    flex-basis: 75%;
+  }
+
+  .interact-section__column_size_sm {
+    flex-basis: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 6px 0;
+    padding-left: 56px;
+    box-sizing: border-box;
+  }
+
+  .interact-section__title {
+    width: 100%;
+    letter-spacing: -0.1px;
+    word-spacing: 4px;
+    font-size: 30pt;
+  }
+
+  .interact-section__slogan {
+    margin: 32px 0;
+    font-size: 32pt;
+    display: block;
+    text-align: center;
+    margin-right: 74.2px;
+    word-spacing: -1.3px;
+    letter-spacing: 2.2px;
+
+    &::after {
+      margin: 0 auto;
+      height: 1px;
+      background-color: white;
+      width: 35.6%;
+      margin-top: 21px;
+    }
+  }
+
+  .interact-section__text {
+    margin-top: 69.3px;
+  }
+
+  .interact-section__p {
+    font-size: 19.6pt;
+    word-spacing: 6px;
+    letter-spacing: -0.5px;
+    line-height: 34px;
+    margin-bottom: 0;
+  }
+
+  .three-diamond-square {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &:nth-child(2) {
+      .three-diamond-square__square {
+        top: initial;
+        left: initial;
+      }
+    }
+
+    &:nth-child(3) {
+      .three-diamond-square__square {
+        top: initial;
+        left: initial;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .three-diamond-square__square {
+    width: 219px;
+    height: 219px;
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+
+  .three-diamond-square__icon {
+    width: 70px;
+  }
+
+  .three-diamond-square__text {
+    font-size: 15pt;
+  }
 }
