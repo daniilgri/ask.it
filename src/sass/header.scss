@@ -115,11 +115,32 @@
   }
 
   .header__menu {
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 9px;
   }
 
   .header__link {
     font-size: 20pt;
+    padding-left: 12px;
+    padding-right: 12px;
+    &:hover {
+      padding-left: 4px;
+      padding-right: 4px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .auth-controllers__button {
+    margin-left: 38px;
+    margin-right: 4px;
+  }
+
+  .auth-controllers__icon {
+    height: 19px;
+  }
+
+  .auth-button__label {
+    font-size: 13px;
   }
 }
