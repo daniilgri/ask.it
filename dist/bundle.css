@@ -358,7 +358,7 @@ table {
 
 @media (max-width: 1536px) {
   .header {
-    height: 132px;
+    height: 134px;
   }
 
   .header__inner {
@@ -555,7 +555,7 @@ table {
 
 @media (max-width: 1536px) {
   .main-section {
-    height: 86.1%;
+    height: 86%;
   }
 
   .main-section__inner {
@@ -737,7 +737,7 @@ table {
 
 @media (max-width: 1536px) {
   .how-to-section {
-    padding: 39px 0 30px 0;
+    padding: 39px 0 29px 0;
   }
 
   .how-to-section__head {
@@ -938,11 +938,11 @@ table {
 
 @media (max-width: 1536px) {
   .features-section {
-    padding-bottom: 855px;
+    padding-bottom: 854px;
   }
 
   .features-section__head {
-    margin-top: 138px;
+    margin-top: 140px;
   }
 
   .features-section__title {
@@ -1063,7 +1063,7 @@ table {
 
 @media (max-width: 1536px) {
   .partners-section {
-    padding-bottom: 31px;
+    padding-bottom: 30px;
     height: 100%;
   }
 
@@ -1278,7 +1278,7 @@ table {
 @media (max-width: 1536px) {
   .interact-section__inner {
     width: 84%;
-    padding: 45px 0 41px 0;
+    padding: 45px 0 40px 0;
   }
 
   .interact-section__column_size_md {
@@ -1874,7 +1874,7 @@ table {
 
   .stat-point__label {
     font-size: 41pt;
-    margin: 50px 0 35px 0;
+    margin: 50px 0 76px 0;
     letter-spacing: -0.3px;
   }
 
@@ -2225,8 +2225,9 @@ table {
   .footer__socials .footer__subtitle {
     font-size: 58pt;
     margin-bottom: 115px;
-    letter-spacing: -1.1px;
-    word-spacing: 10.1px;
+    letter-spacing: 0.1px;
+    word-spacing: 7.7px;
+    margin-left: 6px;
   }
 
   .footer__link {
@@ -2237,7 +2238,7 @@ table {
   .socials-list__icon {
     height: auto;
     width: 86px;
-    margin-right: 159px;
+    margin-right: 178px;
   }
 
   .footer__socials-list {
@@ -2246,7 +2247,78 @@ table {
 
   .footer__lowtitle {
     font-size: 47pt;
-    margin-bottom: 181px;
+    letter-spacing: 0.6px;
+    word-spacing: 5.5px;
+    margin-left: 17.1px;
+    margin-bottom: 115px;
+  }
+
+  .footer__input {
+    width: 96.3%;
+    padding-bottom: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .input {
+    font-size: 60px;
+  }
+  .input::-webkit-input-placeholder {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input::-moz-placeholder {
+    box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input:-ms-input-placeholder {
+    box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input::-ms-input-placeholder {
+    box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input::placeholder {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input::-webkit-input-placeholder {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+  .input::-moz-placeholder {
+    box-sizing: border-box;
+    padding-left: 160px;
+    letter-spacing: 1.7px;
+    word-spacing: 1px;
+    font-size: 60px;
+  }
+
+  .envelop-icon {
+    width: 10%;
+    height: auto;
   }
 
   .footer__privacy {

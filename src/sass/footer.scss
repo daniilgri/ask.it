@@ -256,8 +256,9 @@
     .footer__subtitle {
       font-size: 58pt;
       margin-bottom: 115px;
-      letter-spacing: -1.1px;
-      word-spacing: 10.1px;
+      letter-spacing: 0.1px;
+      word-spacing: 7.7px;
+      margin-left: 6px;
     }
   }
 
@@ -269,7 +270,7 @@
   .socials-list__icon {
     height: auto;
     width: 86px;
-    margin-right: 159px;
+    margin-right: 178px;
   }
 
   .footer__socials-list {
@@ -278,7 +279,48 @@
 
   .footer__lowtitle {
     font-size: 47pt;
-    margin-bottom: 181px;
+    letter-spacing: 0.6px;
+    word-spacing: 5.5px;
+    margin-left: 17.1px;
+    margin-bottom: 115px;
+  }
+
+  .footer__input {
+    width: 96.3%;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  .input {
+    font-size: 60px;
+    &::placeholder {
+      box-sizing: border-box;
+      padding-left: 160px;
+      letter-spacing: 1.7px;
+      word-spacing: 1px;
+      font-size: 60px;
+    }
+
+    &::-webkit-input-placeholder {
+      box-sizing: border-box;
+      padding-left: 160px;
+      letter-spacing: 1.7px;
+      word-spacing: 1px;
+      font-size: 60px;
+    }
+
+    &::-moz-placeholder {
+      box-sizing: border-box;
+      padding-left: 160px;
+      letter-spacing: 1.7px;
+      word-spacing: 1px;
+      font-size: 60px;
+    }
+  }
+
+  .envelop-icon {
+    width: 10%;
+    height: auto;
   }
 
   .footer__privacy {
