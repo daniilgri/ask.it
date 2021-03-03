@@ -171,3 +171,23 @@
     margin-top: 80px;
   }
 }
+
+@include sm {
+  .features-section {
+    padding-bottom: 94px;
+  }
+
+  .features-section__head {
+    margin-top: 36px;
+  }
+
+  .features-section__title {
+    margin-left: 34.3px;
+    font-size: 33pt;
+
+    &::after {
+      height: 2.8px;
+      margin-top: 8.1px;
+    }
+  }
+}

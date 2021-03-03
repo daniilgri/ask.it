@@ -90,9 +90,6 @@
   }
 }
 
-.about-section__text {
-}
-
 .about-section__p {
   margin-bottom: 28px;
   font-family: "Lato", sans-serif;
@@ -299,5 +296,91 @@
     letter-spacing: -0.5px;
     word-spacing: 3px;
     font-weight: 400;
+  }
+}
+
+@include sm {
+  .about-section {
+    padding-bottom: 133px;
+  }
+
+  .about-section__head {
+    margin-top: 67px;
+  }
+
+  .about-section__title {
+    margin-left: 43.1px;
+    letter-spacing: 5.1px;
+  }
+
+  .about-section__title::after {
+    height: 3px;
+    margin-top: 9px;
+    margin-right: 9px;
+  }
+
+  .about-section__column {
+    margin-top: 49px;
+  }
+
+  .about-section__column:last-child {
+    margin: 0 18px;
+    margin-top: 17px;
+    padding-left: 5px;
+  }
+
+  .about-section__subtitle {
+    font-size: 34.8pt;
+    word-spacing: -1.4px;
+    letter-spacing: 0.1px;
+    margin-right: 3.5px;
+  }
+
+  .about-section__slogan {
+    margin: 18px 0 34px 0;
+    font-size: 17.3pt;
+    letter-spacing: 1.2px;
+
+    &::after {
+      width: 21.6%;
+      margin-top: 17px;
+    }
+  }
+
+  .about-section__text {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-section__p {
+    font-size: 12.4pt;
+    line-height: 21.9px;
+    text-align: center;
+    display: inline;
+  }
+
+  .circle-icon {
+    box-shadow: 0px 0px 0px 12px rgb(76 165 154 / 60%);
+    width: 43px;
+    height: 43px;
+  }
+
+  .stat-point {
+    padding-bottom: 0px;
+  }
+
+  .stat-point__value {
+    font-size: 36pt;
+    margin-top: 33px;
+  }
+
+  .stat-point__label {
+    font-size: 19.4pt;
+    margin: 24px 0 31px 0;
+  }
+
+  .stat-point__line {
+    height: 4px;
   }
 }

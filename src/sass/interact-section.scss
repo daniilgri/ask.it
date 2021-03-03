@@ -244,3 +244,82 @@
     font-size: 15pt;
   }
 }
+
+@include sm {
+  .interact-section__inner {
+    flex-flow: column-reverse;
+    padding: 54px 0 33px 0;
+  }
+
+  .interact-section__column_size_md {
+    padding: 0;
+  }
+
+  .interact-section__column_size_sm {
+    padding: 0;
+    flex-flow: row nowrap;
+    width: 68.2%;
+    margin: 0 auto;
+  }
+
+  .three-diamond-square {
+    flex-basis: calc(100% / 3);
+    box-sizing: border-box;
+    margin-right: 56px;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .three-diamond-square__icon {
+    width: 34px;
+    top: 16%;
+  }
+
+  .three-diamond-square__square {
+    width: 114px;
+    height: 114px;
+  }
+
+  .interact-section__title {
+    font-size: 13.9pt;
+    text-align: center;
+    margin-left: 12px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    margin-top: 24px;
+  }
+
+  .interact-section__slogan {
+    margin: 0;
+    margin-top: 11.4px;
+    font-size: 8.9pt;
+    text-align: center;
+    word-spacing: -1.3px;
+    letter-spacing: 2.1px;
+
+    &::after {
+      width: 16.6%;
+      margin-top: 7.9px;
+    }
+  }
+
+  .interact-section__text {
+    margin-top: 27px;
+    text-align: center;
+  }
+
+  .interact-section__p {
+    font-size: 11.6pt;
+    word-spacing: 0px;
+    letter-spacing: -0.5px;
+    line-height: 17px;
+  }
+
+  .three-diamond-square__text {
+    margin-top: 20px;
+    line-height: 12px;
+    font-size: 8pt;
+  }
+}

@@ -6,8 +6,8 @@
   }
 }
 
-@mixin md {
-  @media (max-width: #{$screen-md-max}) {
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
     @content;
   }
 }

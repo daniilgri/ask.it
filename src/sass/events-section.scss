@@ -164,3 +164,40 @@
     width: 96.9%;
   }
 }
+
+@include sm {
+  .events-section {
+    padding-bottom: 0;
+  }
+
+  .events-section__head {
+    display: none;
+  }
+
+  .events-section__body {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .card {
+    width: 100%;
+    @include box-shadow(initial);
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+
+  .card__head {
+    padding: 38px 10px;
+  }
+
+  .card__title {
+    font-size: 43pt;
+  }
+
+  .card__body {
+    padding: 14px 0 72px 0;
+  }
+}

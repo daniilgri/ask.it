@@ -128,8 +128,41 @@
   }
 }
 
-@include md {
+@include sm {
+  .how-to-section {
+    padding: 53px 0 39px 0;
+  }
+
+  .how-to-section__head {
+    margin-bottom: 58px;
+  }
+
+  .how-to-section__title {
+    font-size: 36pt;
+    margin-left: 9px;
+    word-spacing: -3px;
+
+    &::after {
+      height: 3px;
+      margin-top: 8px;
+    }
+  }
+
+  .how-to-section__body {
+    width: 74.5%;
+  }
+
   .box-list-line__box {
     flex-basis: 50%;
+    margin-bottom: 51px;
+  }
+
+  .box-list-line__icon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .box-list-line__label {
+    margin-top: 39px;
   }
 }
