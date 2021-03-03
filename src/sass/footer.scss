@@ -59,7 +59,7 @@
   font-weight: 400;
   color: #fff;
   font-size: 16pt;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
   letter-spacing: 0.4px;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .footer__socials-list {
-  margin-top: 5px;
+  //margin-top: 5px;
   margin-bottom: 39px;
   margin-right: 11px;
 }
@@ -254,7 +254,7 @@
 
   .footer__subtitle {
     font-size: 43pt;
-    margin-bottom: 76px;
+    margin-bottom: 81px;
     letter-spacing: 0.4px;
   }
 
@@ -344,5 +344,113 @@
     margin: 339px 0 64px;
     font-size: 43pt;
     letter-spacing: 1.4px;
+  }
+}
+
+@include sm {
+  .footer {
+    padding-top: 78px;
+  }
+
+  .footer__logo {
+    width: 107px;
+    margin-right: 0;
+    margin-bottom: 35.2px;
+  }
+
+  .footer__p {
+    font-size: 22pt;
+    line-height: 41px;
+    width: 96%;
+  }
+
+  .footer__navigation {
+    display: none;
+  }
+
+  .footer__socials.footer__column_low {
+    margin-top: 139px;
+    margin-right: 0;
+  }
+
+  .footer__socials {
+    &.footer__column_low {
+      margin: 0 auto;
+      margin-top: 139px;
+    }
+    .footer__subtitle {
+      font-size: 28pt;
+      margin-bottom: 57px;
+      letter-spacing: 0.1px;
+      word-spacing: 3px;
+      margin-left: -5px;
+    }
+  }
+
+  .socials-list {
+    margin-right: 21px;
+    margin-bottom: 66.4px;
+  }
+
+  .socials-list__icon {
+    width: 44px;
+    margin-right: 83px;
+  }
+
+  .footer__lowtitle {
+    font-size: 22pt;
+    margin-left: -3.9px;
+    letter-spacing: 0.6px;
+    word-spacing: 2.5px;
+    margin-bottom: 55px;
+  }
+
+  .footer__input {
+    margin-right: 20px;
+    width: 94%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+  }
+
+  .input {
+    font-size: 30px;
+    &::placeholder {
+      box-sizing: border-box;
+      word-spacing: 1px;
+      font-size: 30px;
+      padding-right: 75px;
+      letter-spacing: 0.4px;
+    }
+
+    &::-webkit-input-placeholder {
+      box-sizing: border-box;
+      word-spacing: 1px;
+      font-size: 30px;
+      padding-right: 75px;
+      letter-spacing: 0.4px;
+    }
+
+    &::-moz-placeholder {
+      box-sizing: border-box;
+      word-spacing: 1px;
+      font-size: 30px;
+      padding-right: 75px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  .envelop-icon {
+    margin-bottom: 5px;
+    margin-right: 9px;
+    width: 9.4%;
+  }
+
+  .footer__privacy {
+    margin: 187.8px 0 37px;
+    font-size: 20.2pt;
+    word-spacing: 4px;
+    letter-spacing: 0.3px;
+    margin-left: -9px;
   }
 }
