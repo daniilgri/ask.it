@@ -59,7 +59,7 @@
   font-weight: 400;
   color: #fff;
   font-size: 16pt;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   letter-spacing: 0.4px;
 }
 
@@ -113,6 +113,10 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  .footer__subtitle {
+    margin-bottom: 33px;
+  }
 }
 
 .socials-list {
@@ -134,7 +138,6 @@
 }
 
 .footer__socials-list {
-  //margin-top: 5px;
   margin-bottom: 39px;
   margin-right: 11px;
 }
