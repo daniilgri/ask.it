@@ -1,7 +1,7 @@
 @import "./base/media_mixins";
 
 .features-section {
-  padding-bottom: 116px;
+  padding-bottom: 118px;
 }
 
 .features-section__head {
@@ -40,7 +40,7 @@
 
 .show-grid {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   margin-left: 3px;
 }
@@ -49,10 +49,152 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 2px solid #037693;
 
   &:first-child {
+    .show-grid__svg {
+      margin-top: 17px;
+    }
+
+    .show-grid__text {
+      margin-bottom: 34px;
+    }
+  }
+
+  .show-grid__el::after {
+    content: "";
+    height: 77.6%;
+    width: 2px;
+    background-color: #037693;
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+
+  .show-grid__el:last-child {
     .show-grid__cell {
+      margin: 0 auto;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    .show-grid__el {
+      flex-wrap: wrap;
+    }
+
+    .show-grid__cell {
+      flex-basis: 99%;
+    }
+
+    .show-grid__el::after {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+
+    .show-grid__el::before {
+      content: "";
+      height: 2px;
+      width: 80.6%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #037693;
+      display: block;
+    }
+  }
+}
+
+.show-grid__el {
+  position: relative;
+  display: flex;
+  height: 168px;
+  width: 32.8%;
+}
+
+.show-grid__cell {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.show-grid__svg {
+  margin-left: 9px;
+  margin-top: 34px;
+  height: 67px;
+  width: 64px;
+}
+
+.show-grid__text {
+  margin-bottom: 21px;
+  letter-spacing: 0.7px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 24pt;
+  color: #037693;
+}
+
+@include lg {
+  .features-section {
+    padding-bottom: 687px;
+  }
+
+  .features-section__head {
+    margin-top: 140px;
+  }
+
+  .features-section__title {
+    margin-left: -8.7px;
+    letter-spacing: 4.8px;
+    font-size: 43pt;
+
+    &::after {
+      height: 3.2px;
+      margin-top: 11.1px;
+      margin-left: 2px;
+    }
+  }
+
+  .features-section__body {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .show-grid {
+    flex-flow: row nowrap;
+    margin-left: 0;
+  }
+
+  .show-grid__row {
+    flex-flow: column nowrap;
+  }
+}
+
+@include sm {
+  .features-section {
+    padding-bottom: 94px;
+  }
+
+  .features-section__head {
+    margin-top: 36px;
+  }
+
+  .features-section__title {
+    margin-left: 34.3px;
+    font-size: 33pt;
+
+    &::after {
+      height: 2.8px;
+      margin-top: 8.1px;
+    }
+  }
+}
+
+/*
+.show-grid__cell {
       position: relative;
 
       &:first-child::after {
@@ -98,96 +240,4 @@
         width: 75px;
         height: 75px;
       }
-    }
-  }
-
-  &:last-child {
-    border-bottom: 0;
-  }
-
-  &:first-child {
-    .show-grid__svg {
-      margin-top: 17px;
-    }
-
-    .show-grid__text {
-      margin-bottom: 33px;
-    }
-  }
-}
-
-.show-grid__cell {
-  height: 168px;
-  width: 32.8%;
-  border-right: 2px solid #037693;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-between;
-
-  &:last-child {
-    border-right: 0;
-  }
-}
-
-.show-grid__svg {
-  margin-left: 9px;
-  margin-top: 34px;
-  height: 67px;
-  width: 64px;
-}
-
-.show-grid__text {
-  margin-bottom: 21px;
-  letter-spacing: 0.7px;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 24pt;
-  color: #037693;
-}
-
-@include lg {
-  .features-section {
-    padding-bottom: 854px;
-  }
-
-  .features-section__head {
-    margin-top: 140px;
-  }
-
-  .features-section__title {
-    margin-left: -8.7px;
-    letter-spacing: 4.8px;
-    font-size: 43pt;
-
-    &::after {
-      height: 3.2px;
-      margin-top: 11.1px;
-      margin-left: 2px;
-    }
-  }
-
-  .features-section__body {
-    margin-top: 80px;
-  }
-}
-
-@include sm {
-  .features-section {
-    padding-bottom: 94px;
-  }
-
-  .features-section__head {
-    margin-top: 36px;
-  }
-
-  .features-section__title {
-    margin-left: 34.3px;
-    font-size: 33pt;
-
-    &::after {
-      height: 2.8px;
-      margin-top: 8.1px;
-    }
-  }
-}
+    }*/
