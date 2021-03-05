@@ -99,14 +99,18 @@
 }
 
 .footer__link {
-  font-family: "Lato", sans-serif;
-  font-weight: 200;
-  font-size: 14pt;
-  color: #fff;
   margin-bottom: -0.6px;
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.footer__a {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 14pt;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer__socials {
@@ -132,9 +136,18 @@
   }
 }
 
+.socials-list__a {
+  text-decoration: none;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
 .socials-list__svg {
   width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 .footer__socials-list {
@@ -160,16 +173,20 @@
   font-family: "Lato", sans-serif;
   font-weight: 300;
   padding-bottom: 5px;
+  text-align: center;
+
   &::placeholder {
     padding-left: 46px;
     letter-spacing: 0.8px;
     text-align: center;
   }
+
   &::-webkit-input-placeholder {
     padding-left: 46px;
     letter-spacing: 0.8px;
     text-align: center;
   }
+
   &::-moz-placeholder {
     padding-left: 46px;
     letter-spacing: 0.8px;

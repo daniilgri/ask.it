@@ -13,28 +13,33 @@
   max-width: 78%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
   margin-bottom: 2px;
-  margin-left: 62px;
   min-width: 110px;
   width: 110px;
   height: auto;
+  margin-left: 4%;
 }
 
 .logo__img {
   width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 .header__menu {
   display: flex;
-  margin-left: 8%;
-  min-width: 64.1%;
+  margin-left: 9.8%;
+}
+
+.header__link:hover {
+  .header__menu {
+  }
 }
 
 .header__link {
@@ -45,7 +50,8 @@
   font-size: 23pt;
   display: flex;
   align-items: center;
-  padding: 0px 19px 8px 19px;
+  padding: 0px 15px;
+  padding-bottom: 8px;
   border-top: 1px solid transparent;
   letter-spacing: 0.0005em;
   transition: all 0.1s;
@@ -57,17 +63,33 @@
     background-color: #1e1d1d;
     border-top: 1px solid #ffffff;
     font-weight: 600;
-    padding: 0px 9px 12px 9px;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin: 0 20px;
+    padding: 0px 13px;
+    padding-bottom: 12px;
     transition: all 0.1s;
     letter-spacing: 0px;
     word-spacing: 2px;
+  }
+
+  &::after {
+    content: attr(data-text);
+    content: attr(data-text) / "";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: var(--bold);
+
+    @media speech {
+      display: none;
+    }
   }
 }
 
 .auth-controllers {
   display: flex;
+  margin-left: auto;
 }
 
 .auth-controllers__button {
@@ -88,6 +110,7 @@
   height: 27px;
   width: auto;
   margin-right: 3px;
+  pointer-events: none;
 }
 
 .auth-button__label {

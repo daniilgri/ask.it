@@ -267,24 +267,18 @@
 
   .stat-point__value {
     margin-top: 69px;
-    font-size: 82pt;
     letter-spacing: 2px;
+    font-size: calc(16px + 50 * ((104vw - 346px) / 682));
   }
 
   .stat-point__label {
-    font-size: 41pt;
-    margin: 50px 0 76px 0;
+    margin: 50px 0 75px 0;
     letter-spacing: -0.3px;
+    font-size: calc(16.1px + 21 * ((104vw - 346px) / 682));
   }
 
   .stat-point__line {
     height: 8px;
-  }
-
-  .stat-point__label {
-    font-size: 41pt;
-    margin: 50px 0 75px 0;
-    letter-spacing: -0.3px;
   }
 
   .about-section__p {
