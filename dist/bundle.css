@@ -2244,6 +2244,7 @@ table {
 @media (max-width: 750px) {
   .events-section {
     padding-bottom: 0;
+    height: 146.6%;
   }
 
   .events-section__head {
@@ -2284,15 +2285,107 @@ table {
   }
 
   .card__head {
-    padding: 38px 10px;
+    padding: 26px 10px;
+    background: none;
+  }
+
+  .card_color_red {
+    background: #f47a6b;
+  }
+
+  .card_color_cyan {
+    background: #68b2a9;
+  }
+
+  .card_color_yellow {
+    background: #f2b47c;
   }
 
   .card__title {
-    font-size: 43pt;
+    font-size: 44pt;
+    letter-spacing: 6px;
+    color: #000;
+  }
+
+  .card__title_bold {
+    font-size: 51pt;
   }
 
   .card__body {
-    padding: 14px 0 72px 0;
+    padding: 29px 20px 50px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .card:nth-child(2) .card__inner .card__body {
+    padding: 29px 20px 51px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card:nth-child(2) .card__inner .card__svg {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    margin-left: 0;
+    height: 93px;
+    width: 93px;
+  }
+  .card:nth-child(2) .card__inner .card__p {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    font-size: 20pt;
+    margin: 4px 0 41px 0;
+  }
+  .card:nth-child(2) .card__inner .card__button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    border-radius: 31.88px;
+    padding: 6px 27px;
+    color: white;
+    margin-left: 12px;
+  }
+  .card:nth-child(2) .card__inner .card__title {
+    font-size: 44pt;
+    letter-spacing: 6px;
+  }
+  .card:nth-child(2) .card__inner .card__title_bold {
+    font-size: 51pt;
+  }
+  .card:nth-child(2) .card__inner {
+    -webkit-box-shadow: 0px 0px transparent;
+            box-shadow: 0px 0px transparent;
+  }
+
+  .card__svg {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    margin-left: 0;
+    height: 93px;
+    width: 93px;
+  }
+
+  .card__p {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    font-size: 20pt;
+    margin: 4px 0 41px 0;
   }
 }
 .about-section {
