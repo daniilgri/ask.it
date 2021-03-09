@@ -264,6 +264,10 @@
       width: initial;
       flex-basis: initial;
       max-width: initial;
+
+      &:nth-child(2) {
+        margin-right: -5px;
+      }
     }
   }
 
@@ -274,7 +278,7 @@
 
   .footer__subtitle {
     font-size: 43pt;
-    margin-bottom: 81px;
+    margin-bottom: 73.5px;
     letter-spacing: 0.4px;
   }
 
@@ -283,34 +287,42 @@
   }
 
   .footer__socials.footer__column_low {
-    margin-top: 76px;
+    margin-top: 80px;
     margin-right: 77.5px;
   }
 
   .footer__socials {
     .footer__subtitle {
       font-size: 58pt;
-      margin-bottom: 115px;
+      margin-bottom: 119px;
       letter-spacing: 0.1px;
       word-spacing: 7.7px;
-      margin-left: 6px;
+      margin-left: 15px;
     }
   }
 
   .footer__link {
     margin-bottom: 4.8px;
+  }
+
+  .footer__a {
     font-size: 33pt;
-    letter-spacing: 2.6px;
+    word-spacing: -3px;
+    letter-spacing: 3.2px;
   }
 
   .socials-list__icon {
+    margin-right: 236px;
+  }
+
+  .socials-list__a {
     height: auto;
-    width: 86px;
-    margin-right: 178px;
+    width: 92px;
   }
 
   .footer__socials-list {
-    margin-bottom: 142px;
+    margin-bottom: 209px;
+    margin-right: 76px;
   }
 
   .footer__lowtitle {
@@ -318,7 +330,7 @@
     letter-spacing: 0.6px;
     word-spacing: 5.5px;
     margin-left: 17.1px;
-    margin-bottom: 116px;
+    margin-bottom: 115px;
   }
 
   .footer__input {
@@ -332,7 +344,7 @@
     font-size: 60px;
     &::placeholder {
       box-sizing: border-box;
-      padding-left: 160px;
+      padding-left: 190px;
       letter-spacing: 1.7px;
       word-spacing: 1px;
       font-size: 60px;
@@ -340,7 +352,7 @@
 
     &::-webkit-input-placeholder {
       box-sizing: border-box;
-      padding-left: 160px;
+      padding-left: 190px;
       letter-spacing: 1.7px;
       word-spacing: 1px;
       font-size: 60px;
@@ -348,7 +360,7 @@
 
     &::-moz-placeholder {
       box-sizing: border-box;
-      padding-left: 160px;
+      padding-left: 190px;
       letter-spacing: 1.7px;
       word-spacing: 1px;
       font-size: 60px;
@@ -356,8 +368,9 @@
   }
 
   .envelop-icon {
-    width: 10%;
+    width: 8.9%;
     height: auto;
+    margin-right: 17px;
   }
 
   .footer__privacy {
@@ -408,13 +421,23 @@
   }
 
   .socials-list {
-    margin-right: 21px;
-    margin-bottom: 66.4px;
+    margin-right: 37px;
+    margin-bottom: 88.4px;
   }
 
   .socials-list__icon {
+    margin-right: 100px;
+  }
+
+  .footer__a {
+    font-size: 33pt;
+    word-spacing: -3px;
+    letter-spacing: 3.2px;
+  }
+
+  .socials-list__a {
+    height: auto;
     width: 44px;
-    margin-right: 83px;
   }
 
   .footer__lowtitle {

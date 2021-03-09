@@ -14,7 +14,8 @@
   position: absolute;
   bottom: -20%;
   right: 11.5%;
-  height: 91.2%;
+  width: auto;
+  height: 91%;
 }
 
 .main-section__inner {
@@ -65,6 +66,7 @@
   margin-left: 47px;
   display: flex;
   height: 61px;
+  flex-wrap: wrap;
 }
 
 .main-section__button {
@@ -127,9 +129,16 @@
   }
 }
 
+@media (max-width: 1667px) {
+  .phone {
+    right: 10%;
+    height: 85%;
+  }
+}
+
 @include lg {
   .main-section {
-    height: 96.5%;
+    height: 94.8%;
   }
 
   .main-section__inner {
@@ -190,9 +199,19 @@
   }
 }
 
+@media (max-width: 1332px) {
+  .phone {
+    display: none;
+  }
+
+  .main-section__inner {
+    width: 100%;
+  }
+}
+
 @include sm {
   .main-section {
-    height: 53.8%;
+    height: 52.8%;
   }
 
   .main-section__inner {
@@ -245,5 +264,56 @@
 
   .phone {
     display: none;
+  }
+}
+
+@media (max-width: 677px) {
+  .main-section__inner {
+    padding-top: 84.1px;
+  }
+
+  .main-section__controllers {
+    justify-content: center;
+    height: 1000%;
+  }
+
+  .main-section__button {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 61px;
+  }
+
+  .input-button {
+    width: 100%;
+    height: 61px;
+  }
+
+  .input-button__button {
+    flex-basis: 70%;
+  }
+
+  .input-button__input {
+    flex-basis: 30%;
+    height: 100%;
+  }
+
+  .main-section__title {
+    font-size: 28.6pt;
+    margin-bottom: 30px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .main-section__slogan {
+    font-size: 17.2pt;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .input-button__button {
+    font-size: 12.6pt;
   }
 }

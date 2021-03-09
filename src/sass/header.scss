@@ -33,58 +33,53 @@
 }
 
 .header__menu {
-  display: flex;
   margin-left: 9.8%;
 }
 
-.header__link:hover {
-  .header__menu {
+.header__ul {
+  display: flex;
+  height: 100%;
+}
+
+.header__li {
+  padding: 0px 15px;
+  padding-bottom: 8px;
+  border-top: 1px solid transparent;
+  transition: all 0.1s;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #1e1d1d;
+    border-top: 1px solid #ffffff;
+    margin: 0 20px;
+    padding: 0px 13px;
+    padding-bottom: 12px;
+    transition: all 0.1s;
+
+    .header__link {
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0;
+      transition: all 0.1s;
+      word-spacing: 2px;
+    }
   }
 }
 
 .header__link {
+  box-sizing: border-box;
   color: #f4f4f4;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 23pt;
-  display: flex;
-  align-items: center;
-  padding: 0px 15px;
-  padding-bottom: 8px;
-  border-top: 1px solid transparent;
   letter-spacing: 0.0005em;
   transition: all 0.1s;
   word-spacing: 2px;
   white-space: nowrap;
-
-  &:hover {
-    color: #ffffff;
-    background-color: #1e1d1d;
-    border-top: 1px solid #ffffff;
-    font-weight: 600;
-    margin: 0 20px;
-    padding: 0px 13px;
-    padding-bottom: 12px;
-    transition: all 0.1s;
-    letter-spacing: 0px;
-    word-spacing: 2px;
-  }
-
-  &::after {
-    content: attr(data-text);
-    content: attr(data-text) / "";
-    height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    user-select: none;
-    pointer-events: none;
-    font-weight: var(--bold);
-
-    @media speech {
-      display: none;
-    }
-  }
+  outline: none;
 }
 
 .auth-controllers {
@@ -140,20 +135,24 @@
   }
 
   .header__menu {
-    margin-left: 0;
-    margin-right: 9px;
+    margin-left: 100%;
+    margin-right: 2.5%;
   }
 
-  .header__link {
-    font-size: 20pt;
+  .header__li {
     padding-left: 12px;
     padding-right: 12px;
+
     &:hover {
       padding-left: 4px;
       padding-right: 4px;
       margin-left: 5px;
       margin-right: 5px;
     }
+  }
+
+  .header__link {
+    font-size: 20pt;
   }
 
   .auth-controllers__button {
@@ -167,6 +166,26 @@
 
   .auth-button__label {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__inner {
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .header__li {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .header__menu {
+    margin: 0;
+  }
+
+  .header__link {
+    font-size: 16pt;
   }
 }
 
