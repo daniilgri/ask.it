@@ -1362,6 +1362,111 @@ table {
     margin-bottom: 68px;
   }
 }
+@media (max-width: 750px) {
+  .features-section {
+    padding-bottom: 63px;
+  }
+
+  .features-section__head {
+    margin-top: 35px;
+  }
+
+  .features-section__title {
+    font-size: 34pt;
+    margin-left: 33px;
+    letter-spacing: 4.1px;
+  }
+  .features-section__title::after {
+    margin-top: 8px;
+    margin-left: 2px;
+    height: 3px;
+  }
+
+  .features-section__body {
+    margin-top: 21px;
+  }
+
+  .show-grid__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .show-grid__row:first-child {
+    border-right: 3px solid #037693;
+  }
+  .show-grid__row:first-child .show-grid__svg {
+    margin-top: 36px;
+    height: 48px;
+    width: 48px;
+  }
+  .show-grid__row:first-child .show-grid__text {
+    font-size: 18pt;
+    margin-bottom: 22px;
+  }
+  .show-grid__row:first-child .show-grid__cell {
+    position: relative;
+    border-right: 0;
+    height: 140.4px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .show-grid__row:first-child .show-grid__cell:first-child::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: calc(100% - 55px / 2);
+    bottom: calc(-55px / 2);
+    width: 55px;
+    height: 55px;
+  }
+  .show-grid__row:first-child .show-grid__cell:nth-child(2)::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: calc(100% - 55px / 2);
+    bottom: calc(-55px / 2);
+    width: 55px;
+    height: 55px;
+  }
+  .show-grid__row:first-child .show-grid__cell:last-child::before {
+    display: none;
+  }
+  .show-grid__row:first-child .show-grid__cell:last-child::after {
+    display: none;
+  }
+  .show-grid__row:last-child {
+    border-bottom: 0;
+  }
+
+  .show-grid__cell {
+    height: 140.4px;
+  }
+
+  .show-grid__svg {
+    margin-top: 36px;
+    height: 48px;
+    width: 48px;
+  }
+
+  .show-grid__text {
+    font-size: 18pt;
+    margin-bottom: 22px;
+  }
+}
 .partners-section {
   padding-bottom: 76px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 49, 49, 0.8)), to(rgba(50, 49, 49, 0.8))), url(images/15eb7bbc6a2f3a2988ca4c6d9234e598.jpg);
