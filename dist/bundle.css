@@ -1232,6 +1232,10 @@ table {
 }
 
 @media (max-width: 1536px) {
+  .features-section {
+    padding-bottom: 82px;
+  }
+
   .features-section__head {
     margin-top: 140px;
   }
@@ -1243,7 +1247,7 @@ table {
 
   .features-section__body {
     width: 94%;
-    margin-top: 75px;
+    margin-top: 1px;
   }
 
   .show-grid {
@@ -1271,37 +1275,47 @@ table {
   .show-grid__row:first-child {
     border-right: 3px solid #037693;
   }
+  .show-grid__row:first-child .show-grid__svg {
+    margin-left: 0;
+    margin-top: 102px;
+    height: 129px;
+    width: 129px;
+  }
+  .show-grid__row:first-child .show-grid__text {
+    font-size: 44pt;
+    margin-bottom: 68px;
+  }
   .show-grid__row:first-child .show-grid__cell {
     position: relative;
     border-right: 0;
-    height: 338.4px;
+    height: 394.4px;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .show-grid__row:first-child .show-grid__cell:first-child::after {
     content: "";
     background-color: #fff;
     position: absolute;
-    left: calc(100% - 190px / 2);
-    bottom: calc(-190px / 2);
     border-radius: 50%;
-    width: 190px;
-    height: 190px;
+    left: calc(100% - 150px / 2);
+    bottom: calc(-150px / 2);
+    width: 150px;
+    height: 150px;
   }
   .show-grid__row:first-child .show-grid__cell:nth-child(2)::after {
     content: "";
     background-color: #fff;
     position: absolute;
-    left: calc(100% - 190px / 2);
-    bottom: calc(-190px / 2);
     border-radius: 50%;
-    width: 190px;
-    height: 190px;
+    left: calc(100% - 150px / 2);
+    bottom: calc(-150px / 2);
+    width: 150px;
+    height: 150px;
   }
   .show-grid__row:first-child .show-grid__cell:last-child::before {
     display: none;
@@ -1314,7 +1328,7 @@ table {
   }
 
   .show-grid__cell {
-    height: 338.4px;
+    height: 394.4px;
     width: 100%;
     border: 0;
     border-bottom: 3px solid #037693;
@@ -1328,9 +1342,9 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .show-grid__cell:last-child {
     border-bottom: 0;
@@ -1338,7 +1352,14 @@ table {
 
   .show-grid__svg {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 102px;
+    height: 129px;
+    width: 129px;
+  }
+
+  .show-grid__text {
+    font-size: 44pt;
+    margin-bottom: 68px;
   }
 }
 .partners-section {
