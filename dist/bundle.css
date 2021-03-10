@@ -1632,7 +1632,7 @@ table {
 @media (max-width: 750px) {
   .partners-section {
     padding-bottom: 0px;
-    height: 56.1%;
+    height: 55.2%;
   }
 
   .partners-section__head {
@@ -2092,9 +2092,6 @@ table {
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
-.card:nth-child(2) .card__inner .card__head {
-  padding: 32px 0px;
-}
 .card:nth-child(2) .card__inner .card__body {
   padding: 10px 0 45px 0;
 }
@@ -2105,6 +2102,7 @@ table {
 }
 .card:nth-child(2) .card__inner .card__title {
   line-height: 93px;
+  margin: 32px 0;
   margin-right: 8px;
 }
 .card:nth-child(2) .card__inner .card__title_bold {
@@ -2120,7 +2118,6 @@ table {
 }
 
 .card__head {
-  padding: 30px 10px;
   background-image: url(images/ad1f15412d287a74d4ec6c5c8bb0f86a.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -2136,6 +2133,7 @@ table {
   font-size: 52pt;
   color: white;
   line-height: 1.2em;
+  margin: 32px 0;
 }
 
 .card__title_bold {
@@ -2244,7 +2242,6 @@ table {
 @media (max-width: 750px) {
   .events-section {
     padding-bottom: 0;
-    height: 146.6%;
   }
 
   .events-section__head {
@@ -2264,6 +2261,8 @@ table {
 
   .card {
     width: 100%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
   }
 
   .card__inner {
@@ -2285,26 +2284,52 @@ table {
   }
 
   .card__head {
-    padding: 26px 10px;
     background: none;
   }
 
   .card_color_red {
-    background: #f47a6b;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 99, 81, 0.85)), to(rgba(242, 99, 81, 0.85))), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-image: linear-gradient(0deg, rgba(242, 99, 81, 0.85), rgba(242, 99, 81, 0.85)), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .card_color_cyan {
-    background: #68b2a9;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(240, 167, 101, 0.85)), to(rgba(240, 167, 101, 0.85))), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-image: linear-gradient(0deg, rgba(240, 167, 101, 0.85), rgba(240, 167, 101, 0.85)), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .card_color_yellow {
-    background: #f2b47c;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(77, 165, 154, 0.85)), to(rgba(77, 165, 154, 0.85))), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-image: linear-gradient(0deg, rgba(77, 165, 154, 0.85), rgba(77, 165, 154, 0.85)), url(images/8e7e2b7514ed9f919f3dbf8762fc3d0e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .card__button_color_green {
+    color: #f0a765;
+  }
+
+  .card__button_color_red {
+    color: #f26351;
+  }
+
+  .card__button_color_yellow {
+    color: #4da59a;
   }
 
   .card__title {
     font-size: 44pt;
     letter-spacing: 6px;
-    color: #000;
+    color: #fff;
   }
 
   .card__title_bold {
@@ -2312,7 +2337,7 @@ table {
   }
 
   .card__body {
-    padding: 29px 20px 50px 20px;
+    padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -2324,8 +2349,19 @@ table {
             justify-content: center;
   }
 
+  .card__button {
+    background-color: white;
+    margin-bottom: 36px;
+  }
+
+  .card:nth-child(2) .card__inner {
+    -webkit-box-shadow: 0px 0px transparent;
+            box-shadow: 0px 0px transparent;
+    margin-top: 0;
+    height: 100%;
+  }
   .card:nth-child(2) .card__inner .card__body {
-    padding: 29px 20px 51px 20px;
+    padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -2347,7 +2383,7 @@ table {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     font-size: 20pt;
-    margin: 4px 0 41px 0;
+    margin: 37px 0 47px 0;
   }
   .card:nth-child(2) .card__inner .card__button {
     outline: none;
@@ -2358,19 +2394,18 @@ table {
     font-size: 20pt;
     border-radius: 31.88px;
     padding: 6px 27px;
-    color: white;
     margin-left: 12px;
+    background-color: white;
+    margin-bottom: 36px;
   }
   .card:nth-child(2) .card__inner .card__title {
+    margin: 20px 0 8px;
     font-size: 44pt;
     letter-spacing: 6px;
+    color: #fff;
   }
   .card:nth-child(2) .card__inner .card__title_bold {
     font-size: 51pt;
-  }
-  .card:nth-child(2) .card__inner {
-    -webkit-box-shadow: 0px 0px transparent;
-            box-shadow: 0px 0px transparent;
   }
 
   .card__svg {
@@ -2385,7 +2420,12 @@ table {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     font-size: 20pt;
-    margin: 4px 0 41px 0;
+    margin: 37px 0 47px 0;
+    color: #fff;
+  }
+
+  .card__line {
+    display: none;
   }
 }
 .about-section {

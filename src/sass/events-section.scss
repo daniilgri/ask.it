@@ -1,10 +1,30 @@
 @import "./base/mixins";
 @import "./base/media_mixins";
 
+$eventsSectionColor: #e8e8e8;
+$eventsSectionTitleColor: #037693;
+$eventsSectionTitleUnderlineColor: #037693;
+$cardInnerColor: white;
+$cardInnerBoxShadowColor: rgba(0, 0, 0, 0.2);
+$cardTitleColor: white;
+$cardLineColorGreen: #4ca59a;
+$cardLineColorRed: #f26250;
+$cardLineColorYellow: #f0a765;
+$cardButtonTextColor: white;
+$cardButtonColorGreen: #4ca59a;
+$cardButtonColorRed: #f26250;
+$cardButtonColorYellow: #f0a765;
+$cardBorderColor: white;
+$cardColorRedBg: #f26351;
+$cardColorYellowBg: #f0a765;
+$cardColorCyanBg: #4da59a;
+$cardButtonSmBgColor: white;
+$cardParagraphSmColor: white;
+
 .events-section {
   display: flex;
   flex-flow: column nowrap;
-  background-color: #e8e8e8;
+  background-color: $eventsSectionColor;
   padding-bottom: 52px;
 }
 
@@ -20,7 +40,7 @@
   font-weight: 300;
   font-size: 50pt;
   letter-spacing: 6px;
-  color: #037693;
+  color: $eventsSectionTitleColor;
   margin-left: -22px;
 }
 
@@ -28,7 +48,7 @@
   content: "";
   display: block;
   height: 5px;
-  background-color: #037693;
+  background-color: $eventsSectionTitleUnderlineColor;
   border-radius: 20px;
   width: 47%;
   margin-top: 12px;
@@ -48,8 +68,8 @@
 }
 
 .card__inner {
-  background-color: white;
-  @include box-shadow(0px 2px 2px 1px rgba(0, 0, 0, 0.2));
+  background-color: $cardInnerColor;
+  @include box-shadow(0px 2px 2px 1px $cardInnerBoxShadowColor);
 }
 
 .card:first-child .card__inner {
@@ -70,10 +90,6 @@
   margin-top: -45px;
   box-shadow: 0 0 25px rgba(0 0 0 / 25%);
 
-  .card__head {
-    padding: 32px 0px;
-  }
-
   .card__body {
     padding: 10px 0 45px 0;
   }
@@ -86,6 +102,7 @@
 
   .card__title {
     line-height: 93px;
+    margin: 32px 0;
     margin-right: 8px;
   }
 
@@ -105,7 +122,6 @@
 }
 
 .card__head {
-  padding: 30px 10px;
   background-image: url("../images/main/bg-img-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -119,8 +135,9 @@
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 52pt;
-  color: white;
+  color: $cardTitleColor;
   line-height: 1.2em;
+  margin: 32px 0;
 }
 
 .card__title_bold {
@@ -134,14 +151,14 @@
 }
 
 .card__line_color_green {
-  background-color: #4ca59a;
+  background-color: $cardLineColorGreen;
 }
 .card__line_color_red {
-  background-color: #f26250;
+  background-color: $cardLineColorRed;
 }
 
 .card__line_color_yellow {
-  background-color: #f0a765;
+  background-color: $cardLineColorYellow;
 }
 
 .card__body {
@@ -177,19 +194,19 @@
   font-size: 20pt;
   border-radius: 31.88px;
   padding: 6px 27px;
-  color: white;
+  color: $cardButtonTextColor;
   margin-left: 12px;
 }
 
 .card__button_color_green {
-  background-color: #4ca59a;
+  background-color: $cardButtonColorGreen;
 }
 .card__button_color_red {
-  background-color: #f26250;
+  background-color: $cardButtonColorRed;
 }
 
 .card__button_color_yellow {
-  background-color: #f0a765;
+  background-color: $cardButtonColorYellow;
 }
 
 @include lg {
@@ -221,7 +238,6 @@
 @include sm {
   .events-section {
     padding-bottom: 0;
-    height: 146.6%;
   }
 
   .events-section__head {
@@ -236,6 +252,8 @@
 
   .card {
     width: 100%;
+    border-top: 3px solid $cardBorderColor;
+    border-bottom: 3px solid $cardBorderColor;
   }
 
   .card__inner {
@@ -255,26 +273,63 @@
   }
 
   .card__head {
-    padding: 26px 10px;
     background: none;
   }
 
   .card_color_red {
-    background: #f47a6b;
+    background-image: linear-gradient(
+        0deg,
+        rgba($cardColorRedBg, 0.85),
+        rgba($cardColorRedBg, 0.85)
+      ),
+      url("../images/events/bg-red-sm-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .card_color_cyan {
-    background: #68b2a9;
+    background-image: linear-gradient(
+        0deg,
+        rgba($cardColorYellowBg, 0.85),
+        rgba($cardColorYellowBg, 0.85)
+      ),
+      url("../images/events/bg-red-sm-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .card_color_yellow {
-    background: #f2b47c;
+    background-image: linear-gradient(
+        0deg,
+        rgba($cardColorCyanBg, 0.85),
+        rgba($cardColorCyanBg, 0.85)
+      ),
+      url("../images/events/bg-red-sm-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .card__button_color_green {
+    color: $cardButtonColorYellow;
+  }
+  .card__button_color_red {
+    color: $cardButtonColorRed;
+  }
+
+  .card__button_color_yellow {
+    color: $cardButtonColorGreen;
   }
 
   .card__title {
     font-size: 44pt;
     letter-spacing: 6px;
-    color: #000;
+    color: $cardTitleColor;
   }
 
   .card__title_bold {
@@ -282,59 +337,67 @@
   }
 
   .card__body {
-    padding: 29px 20px 50px 20px;
+    padding: 0;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
 
+  .card__button {
+    background-color: $cardButtonSmBgColor;
+    margin-bottom: 36px;
+  }
+
   .card:nth-child(2) {
-    .card__inner .card__body {
-      padding: 29px 20px 51px 20px;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .card__inner .card__svg {
-      flex-basis: 10%;
-      margin-left: 0;
-      height: 93px;
-      width: 93px;
-    }
-
-    .card__inner .card__p {
-      flex-basis: 70%;
-      font-size: 20pt;
-      margin: 4px 0 41px 0;
-    }
-
-    .card__inner .card__button {
-      outline: none;
-      cursor: pointer;
-      border: 0;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      font-size: 20pt;
-      border-radius: 31.88px;
-      padding: 6px 27px;
-      color: white;
-      margin-left: 12px;
-    }
-
     .card__inner {
+      box-shadow: 0px 0px transparent;
+      margin-top: 0;
+      height: 100%;
+
+      .card__body {
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .card__svg {
+        flex-basis: 10%;
+        margin-left: 0;
+        height: 93px;
+        width: 93px;
+      }
+
+      .card__p {
+        flex-basis: 70%;
+        font-size: 20pt;
+        margin: 37px 0 47px 0;
+      }
+
+      .card__button {
+        outline: none;
+        cursor: pointer;
+        border: 0;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        border-radius: 31.88px;
+        padding: 6px 27px;
+        margin-left: 12px;
+        background-color: $cardButtonSmBgColor;
+        margin-bottom: 36px;
+      }
+
       .card__title {
+        margin: 20px 0 8px;
         font-size: 44pt;
         letter-spacing: 6px;
+        color: $cardTitleColor;
       }
 
       .card__title_bold {
         font-size: 51pt;
       }
-    }
-
-    .card__inner {
-      box-shadow: 0px 0px transparent;
     }
   }
 
@@ -348,6 +411,11 @@
   .card__p {
     flex-basis: 70%;
     font-size: 20pt;
-    margin: 4px 0 41px 0;
+    margin: 37px 0 47px 0;
+    color: $cardParagraphSmColor;
+  }
+
+  .card__line {
+    display: none;
   }
 }
