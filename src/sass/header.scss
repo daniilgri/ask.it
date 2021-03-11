@@ -1,10 +1,19 @@
 @import "./base/fonts";
 @import "./base/media_mixins";
 
+$headerBgColor: #121111;
+$headerLiBgColorOnHover: #1e1d1d;
+$headerLiBorderTopOnHover: #fff;
+$headerLinkTextColor: #f4f4f4;
+$authControllersButtonTextColor: #f4f4f4;
+$authControllersButtonTextColorOnHover: #fff;
+$burgerMenuBorderColor: white;
+$burgerMenuLineBgColor: white;
+
 .header {
   width: 100%;
   height: 164px;
-  background-color: #121111;
+  background-color: $headerBgColor;
   position: relative;
 }
 
@@ -51,15 +60,15 @@
   box-sizing: border-box;
 
   &:hover {
-    background-color: #1e1d1d;
-    border-top: 1px solid #ffffff;
+    background-color: $headerLiBgColorOnHover;
+    border-top: 1px solid $headerLiBorderTopOnHover;
     margin: 0 20px;
     padding: 0px 13px;
     padding-bottom: 12px;
     transition: all 0.1s;
 
     .header__link {
-      color: #ffffff;
+      color: $headerLinkTextColor;
       font-weight: 600;
       letter-spacing: 0;
       transition: all 0.1s;
@@ -70,7 +79,7 @@
 
 .header__link {
   box-sizing: border-box;
-  color: #f4f4f4;
+  color: $headerLinkTextColor;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -88,7 +97,7 @@
 }
 
 .auth-controllers__button {
-  color: #f4f4f4;
+  color: $authControllersButtonTextColor;
   text-decoration: none;
   display: flex;
   flex-flow: column nowrap;
@@ -97,7 +106,7 @@
   margin-left: 38px;
   margin-right: 16px;
   &:hover {
-    color: #ffffff;
+    color: $authControllersButtonTextColorOnHover;
   }
 }
 
@@ -219,7 +228,7 @@
     right: 6.4%;
     top: calc(45.7% - 56px / 2);
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid $burgerMenuBorderColor;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -231,6 +240,6 @@
   .burger-menu__line {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: $burgerMenuLineBgColor;
   }
 }

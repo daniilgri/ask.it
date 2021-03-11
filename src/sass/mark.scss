@@ -1,5 +1,8 @@
 @import "./base/media_mixins";
 
+$markThemeWhiteColor: white;
+$markThemeCyanColor: #037693;
+
 .mark {
   position: absolute;
   top: 0px;
@@ -20,15 +23,15 @@
 }
 
 .mark_theme_white {
-  border-right: 1px solid white;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 1px solid $markThemeWhiteColor;
+  border-top: 1px solid $markThemeWhiteColor;
+  border-bottom: 1px solid $markThemeWhiteColor;
 }
 
 .mark_theme_cyan {
-  border-right: 1px solid #037693;
-  border-top: 1px solid #037693;
-  border-bottom: 1px solid #037693;
+  border-right: 1px solid $markThemeCyanColor;
+  border-top: 1px solid $markThemeCyanColor;
+  border-bottom: 1px solid $markThemeCyanColor;
 }
 
 .mark__text {
@@ -47,11 +50,11 @@
 }
 
 .mark__text_theme_white {
-  color: white;
+  color: $markThemeWhiteColor;
 }
 
 .mark__text_theme_cyan {
-  color: #037693;
+  color: $markThemeCyanColor;
 }
 
 .mark__shape {
@@ -65,29 +68,29 @@
   border-radius: 50%;
   height: 21px;
   min-width: 21px;
-  background-color: white;
+  background-color: $markThemeWhiteColor;
 }
 
 .mark__circle_theme_white {
-  background-color: white;
+  background-color: $markThemeWhiteColor;
 }
 
 .mark__circle_theme_cyan {
-  background-color: #037693;
+  background-color: $markThemeCyanColor;
 }
 
 .mark__line {
   height: 2px;
   width: 100%;
-  background-color: white;
+  background-color: $markThemeWhiteColor;
 }
 
 .mark__line_theme_white {
-  background-color: white;
+  background-color: $markThemeWhiteColor;
 }
 
 .mark__line_theme_cyan {
-  background-color: #037693;
+  background-color: $markThemeCyanColor;
 }
 
 @include lg {

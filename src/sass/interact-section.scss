@@ -1,7 +1,15 @@
 @import "./base/media_mixins";
 
+$interactSectionBgColor: #037693;
+$threeDiamondSquareTextColor: white;
+$interactSectionTitleColor: white;
+$interactSectionSloganColor: white;
+$interactSectionSloganUnderlineColor: white;
+$interactSectionParagraphColor: white;
+$threeDiamondSquareElemBorderColor: #f1b451;
+
 .interact-section {
-  background-color: #037693;
+  background-color: $interactSectionBgColor;
   position: relative;
 }
 
@@ -64,7 +72,7 @@
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: $threeDiamondSquareTextColor;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20pt;
@@ -82,7 +90,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 49pt;
-  color: white;
+  color: $interactSectionTitleColor;
   line-height: 1.22em;
   letter-spacing: -0.5px;
   word-spacing: 5px;
@@ -94,7 +102,7 @@
   font-weight: 500;
   font-size: 24pt;
   word-spacing: 0.1em;
-  color: white;
+  color: $interactSectionSloganColor;
   display: flex;
   margin-left: 2px;
 
@@ -102,7 +110,7 @@
     content: " ";
     flex: 1;
     height: 1px;
-    background-color: white;
+    background-color: $interactSectionSloganUnderlineColor;
     margin-top: 25px;
     margin-right: 27.7%;
     margin-left: 1%;
@@ -120,7 +128,7 @@
   font-weight: 300;
   font-size: 16pt;
   line-height: 1.25em;
-  color: white;
+  color: $interactSectionParagraphColor;
   &:last-child {
     margin-bottom: 0;
   }
@@ -143,7 +151,7 @@
   width: 0;
   height: 0;
   border: 50px solid transparent;
-  border-top-color: #f1b451;
+  border-top-color: $threeDiamondSquareElemBorderColor;
 }
 
 @include lg {
@@ -186,7 +194,6 @@
     &::after {
       margin: 0 auto;
       height: 1px;
-      background-color: white;
       width: 35.6%;
       margin-top: 21px;
     }

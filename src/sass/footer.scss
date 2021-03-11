@@ -1,7 +1,16 @@
 @import "./base/media_mixins";
 
+$footerBgColor: #0d0d0d;
+$footerParagraphColor: #fff;
+$footerSubtitleColor: #fff;
+$footerLowtitleColor: #fff;
+$footerLinkColor: #fff;
+$footerInputBorderColor: white;
+$inputTextColor: white;
+$footerPrivacyTextColor: #fff;
+
 .footer {
-  background-color: #0d0d0d;
+  background-color: $footerBgColor;
   padding-top: 101px;
   line-height: normal;
 }
@@ -50,14 +59,14 @@
   font-family: "Lato", sans-serif;
   font-weight: 200;
   font-size: 16pt;
-  color: #fff;
+  color: $footerParagraphColor;
   line-height: 1.265em;
 }
 
 .footer__subtitle {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: $footerSubtitleColor;
   font-size: 16pt;
   margin-bottom: 27px;
   letter-spacing: 0.4px;
@@ -66,7 +75,7 @@
 .footer__lowtitle {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: $footerLowtitleColor;
   font-size: 14pt;
   margin-bottom: 31px;
   letter-spacing: -0.3px;
@@ -109,7 +118,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 200;
   font-size: 14pt;
-  color: #fff;
+  color: $footerLinkColor;
   text-decoration: none;
 }
 
@@ -156,7 +165,7 @@
 }
 
 .footer__input {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $footerInputBorderColor;
   width: 77.6%;
   margin: 0 auto;
   display: flex;
@@ -168,7 +177,7 @@
   background: rgba(0, 0, 0, 0);
   border: 0;
   outline: 0;
-  color: white;
+  color: $inputTextColor;
   font-size: 12pt;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -194,13 +203,6 @@
   }
 }
 
-.letter-icon {
-  height: 30px;
-  width: 30px;
-  background-color: springgreen;
-  margin-left: auto;
-}
-
 .footer__privacy {
   margin: 137px 0 34px;
   flex-basis: 100%;
@@ -208,7 +210,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 200;
   font-size: 17pt;
-  color: #fff;
+  color: $footerPrivacyTextColor;
   word-spacing: -1px;
   letter-spacing: 0.2px;
 }
@@ -337,7 +339,7 @@
     width: 96.3%;
     padding-bottom: 18px;
     box-sizing: border-box;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid $footerInputBorderColor;
   }
 
   .input {
@@ -453,7 +455,7 @@
     width: 94%;
     box-sizing: border-box;
     padding-bottom: 5px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid $footerInputBorderColor;
   }
 
   .input {

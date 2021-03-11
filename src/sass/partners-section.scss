@@ -1,5 +1,8 @@
 @import "./base/media_mixins";
 
+$partnersSectionTitleColor: white;
+$partnersSectionTitleUnderlineColor: white;
+
 .partners-section {
   padding-bottom: 76px;
   background-image: linear-gradient(rgba(#323131, 0.8), rgba(#323131, 0.8)),
@@ -20,7 +23,7 @@
 }
 
 .partners-section__title {
-  color: white;
+  color: $partnersSectionTitleColor;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 50pt;
@@ -32,7 +35,7 @@
   content: "";
   display: block;
   height: 5px;
-  background-color: white;
+  background-color: $partnersSectionTitleUnderlineColor;
   border-radius: 20px;
   width: 37%;
   margin-top: 12px;

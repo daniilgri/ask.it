@@ -1,5 +1,14 @@
 @import "./base/media_mixins";
 
+$mainSectionTitleColor: white;
+$mainSectionTitleUnderlineColor: white;
+$mainSectionSloganColor: white;
+$mainSectionButtonBorderColor: white;
+$mainSectionButtonTextColor: white;
+$inputButtonBorderColor: white;
+$inputButtonButtonTextColor: white;
+$inputButtonInputTextColor: #037693;
+
 .main-section {
   background-image: url("../images/main/bg-img-1.jpg");
   height: 106.1%;
@@ -33,7 +42,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 800;
   font-size: 50pt;
-  color: white;
+  color: $mainSectionTitleColor;
   text-shadow: 0px 7px rgba(0, 0, 0, 0.7);
   margin-left: 44px;
   letter-spacing: -1px;
@@ -44,7 +53,7 @@
   content: "";
   display: block;
   height: 8px;
-  background-color: white;
+  background-color: $mainSectionTitleUnderlineColor;
   border-radius: 20px;
   width: 36%;
   margin-top: 16px;
@@ -55,7 +64,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 29pt;
-  color: white;
+  color: $mainSectionSloganColor;
   word-spacing: 4px;
   margin-right: 34px;
   letter-spacing: 0px;
@@ -76,10 +85,10 @@
   align-items: center;
   width: 213px;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid $mainSectionButtonBorderColor;
   outline: 0;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: $mainSectionButtonTextColor;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 19pt;
@@ -89,7 +98,7 @@
 
 .input-button {
   display: flex;
-  border: 1px solid white;
+  border: 1px solid $inputButtonBorderColor;
 }
 
 .input-button__button {
@@ -97,7 +106,7 @@
   border: 0;
   outline: 0;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: $inputButtonButtonTextColor;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 19pt;
@@ -114,7 +123,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18pt;
-  color: #037693;
+  color: $inputButtonInputTextColor;
   width: 139px;
   height: auto;
   letter-spacing: -1px;
@@ -124,7 +133,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 18pt;
-    color: #037693;
+    color: $inputButtonInputTextColor;
     text-align: center;
   }
 }

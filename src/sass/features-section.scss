@@ -1,5 +1,12 @@
 @import "./base/media_mixins";
 
+$featuresSectionTitleColor: #037693;
+$featuresSectionTitleUnderlineColor: #037693;
+$showGridRowBorderColor: #037693;
+$showGridCellCircleBgColor: white;
+$showGridTextColor: #037693;
+$showGridCell: #037693;
+
 .features-section {
   padding-bottom: 116px;
 }
@@ -18,14 +25,14 @@
   margin-left: 49px;
   letter-spacing: 6px;
   word-spacing: 6px;
-  color: #037693;
+  color: $featuresSectionTitleColor;
 }
 
 .features-section__title::after {
   content: "";
   display: block;
   height: 5px;
-  background-color: #037693;
+  background-color: $featuresSectionTitleUnderlineColor;
   border-radius: 20px;
   width: 36%;
   margin-top: 11px;
@@ -49,7 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 2px solid #037693;
+  border-bottom: 2px solid $showGridRowBorderColor;
 
   &:first-child {
     z-index: 88;
@@ -65,7 +72,7 @@
     .show-grid__cell {
       &:first-child::after {
         content: "";
-        background-color: white;
+        background-color: $showGridCellCircleBgColor;
         position: absolute;
         left: calc(-75px / 2);
         bottom: calc(-75px / 2);
@@ -76,7 +83,7 @@
 
       &:nth-child(2)::after {
         content: "";
-        background-color: white;
+        background-color: $showGridCellCircleBgColor;
         position: absolute;
         left: calc(-75px / 2);
         bottom: calc(-75px / 2);
@@ -87,7 +94,7 @@
 
       &:last-child::before {
         content: "";
-        background-color: white;
+        background-color: $showGridCellCircleBgColor;
         position: absolute;
         left: calc(-75px / 2);
         bottom: calc(-75px / 2);
@@ -98,7 +105,7 @@
 
       &:last-child::after {
         content: "";
-        background-color: white;
+        background-color: $showGridCellCircleBgColor;
         position: absolute;
         right: calc(-75px / 2);
         bottom: calc(-75px / 2);
@@ -118,7 +125,7 @@
   position: relative;
   height: 168px;
   width: 32.8%;
-  border-right: 2px solid #037693;
+  border-right: 2px solid $showGridRowBorderColor;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -142,7 +149,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 24pt;
-  color: #037693;
+  color: $showGridTextColor;
 }
 
 @include lg {
@@ -176,7 +183,7 @@
     flex-basis: 50%;
 
     &:first-child {
-      border-right: 3px solid #037693;
+      border-right: 3px solid $showGridRowBorderColor;
 
       .show-grid__svg {
         margin-left: 0;
@@ -200,7 +207,7 @@
 
         &:first-child::after {
           content: "";
-          background-color: #fff;
+          background-color: $showGridCellCircleBgColor;
           position: absolute;
           border-radius: 50%;
           left: calc(100% - 150px / 2);
@@ -211,7 +218,7 @@
 
         &:nth-child(2)::after {
           content: "";
-          background-color: #fff;
+          background-color: $showGridCellCircleBgColor;
           position: absolute;
           border-radius: 50%;
           left: calc(100% - 150px / 2);
@@ -239,7 +246,7 @@
     height: 394.4px;
     width: 100%;
     border: 0;
-    border-bottom: 3px solid #037693;
+    border-bottom: 3px solid $showGridCell;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,7 +302,7 @@
     flex-basis: 50%;
 
     &:first-child {
-      border-right: 3px solid #037693;
+      border-right: 3px solid $showGridRowBorderColor;
 
       .show-grid__svg {
         margin-top: 36px;
@@ -318,7 +325,7 @@
 
         &:first-child::after {
           content: "";
-          background-color: #fff;
+          background-color: $showGridCellCircleBgColor;
           position: absolute;
           border-radius: 50%;
           left: calc(100% - 55px / 2);
@@ -329,7 +336,7 @@
 
         &:nth-child(2)::after {
           content: "";
-          background-color: #fff;
+          background-color: $showGridCellCircleBgColor;
           position: absolute;
           border-radius: 50%;
           left: calc(100% - 55px / 2);
